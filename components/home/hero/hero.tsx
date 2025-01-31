@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { FileText } from "lucide-react";
+import PassportForm from "./passport-form";
 
 export default function Hero() {
   return (
@@ -26,9 +27,7 @@ export default function Hero() {
             <FileText size={32} className="text-white" />
             Demande de passeport et de visa
           </div>
-          <Button color="secondary" className="text-white">
-            Ouvrir maintenant
-          </Button>
+          <PassportForm/>
         </div>
       </div>
 
