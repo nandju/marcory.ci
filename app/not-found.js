@@ -6,10 +6,10 @@ export default function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center text-center h-screen bg-gray-50">
       <Image
-        src="/assets/images/illustrations/page-introuvable/404-erreur.png" 
+        src="/assets/images/logo_2.png" 
         alt="Page non trouvée"
-        width={300}
-        height={300}
+        width={100}
+        height={100}
         className="mb-6"
       />
       <p className="mt-4 text-xl font-semibold text-center text-black">Oops ! Nous rencontrons un problème avec la page</p>

@@ -29,14 +29,14 @@ export default function About(){
                         <User size={24} className="text-secondary" />
                         <div className="flex flex-col">
                             <div>Direction</div>
-                            <div>Gonfouli SOUARIBA, Ambassadeur en Côte d'Ivoire</div>
+                            <div>Gonfouli SOUARIBA, Ambassadeur en Côte d&apos;Ivoire</div>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
                         <Globe size={24} className="text-secondary" />
                         <div className="flex flex-col">
                         <div>Pays</div>
-                        <div>Côte d'Ivoire</div>
+                        <div>Côte d&apos;Ivoire</div>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">

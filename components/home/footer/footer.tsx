@@ -66,7 +66,7 @@ const Footer = () => {
           
           {/* Info Ambassade & Réseaux Sociaux */}
           <div>
-            <h2 className="text-sm font-semibold">Ambassade du Tchad en Côte d'Ivoire</h2>
+            <h2 className="text-sm font-semibold">Ambassade du Tchad en Côte d&apos;Ivoire</h2>
             <p className="text-sm text-gray-300 mt-2">
               Représentation permanente auprès des Organisations des Nations Unies à Abidjan.
             </p>

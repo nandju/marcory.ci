@@ -30,9 +30,9 @@ export default function News() {
     return (
         <div className="w-full max-w-7xl mx-auto px-4 py-12">
             {/* Titre et Navigation */}
-            <div className="flex justify-between items-center mb-8">
+            <div className="flex justify-center md:justify-between text-center items-center mb-8">
                 <h2 className="text-3xl font-bold text-secondary">ACTUALITÉS</h2>
-                <div className="flex gap-2">
+                <div className="hidden md:flex gap-2">
                     <button className="p-2  bg-gray-200 hover:bg-gray-300">
                         <ChevronLeft className="w-6 h-6" />
                     </button>
