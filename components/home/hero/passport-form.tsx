@@ -10,13 +10,16 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function PassportForm() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <div className="flex flex-col gap-2">
-      <Button color="secondary" className="text-white" onPress={onOpen}>Ouvrir maintenant</Button>
+      <Button color="secondary" className="text-white" onPress={onOpen}>
+        Ouvrir maintenant
+      </Button>
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
@@ -26,10 +29,41 @@ export default function PassportForm() {
         size="lg"
       >
         <ModalContent>
-          <ModalHeader className="flex flex-col gap-1">Formulaire de demande de passeport</ModalHeader>
+          <ModalHeader className="flex flex-col gap-1">
+            Formulaire de demande de passeport
+          </ModalHeader>
           <ModalBody className="max-h-[80vh] w-auto overflow-y-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-8">
+              <h1 className="text-gray-600 mb-4">Formulaire de demande de passeport</h1>
+              <div className="flex items-center justify-center gap-4">
+                <div className="h-1 w-12 bg-blue-600" />
+                <Image
+                  src="/assets/images/illustrations/formulaire/logo.png"
+                  alt="Chad Embassy Logo"
+                  width={48}
+                  height={48}
+                  className="mx-2"
+                />
+                <div className="h-1 w-12 bg-red-600" />
+              </div>
+              <div className="text-blue-700 font-bold text-xl mt-2">EMBASSADE DU TCHAD</div>
+            </div>
+
+            {/* Photo upload area */}
+            <div className="w-32 h-40 mx-auto mb-8 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
+              <Image
+                src="/assets/images/backgrounds/background_2.png"
+                alt="Upload photo icon"
+                width={24}
+                height={24}
+                className="opacity-50"
+              />
+            </div>
+
+            {/* Form fields */}
             <div className="grid grid-cols-1 gap-4 sm:gap-6 md:gap-8">
-              <div className="flex  gap-2">
+              <div className="flex gap-2">
                 <input
                   type="text"
                   id="nom"
@@ -45,9 +79,8 @@ export default function PassportForm() {
                   className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
                 />
               </div>
-              
-              <div className="flex gap-2">
 
+              <div className="flex gap-2">
                 <input
                   type="date"
                   id="date-naissance"
@@ -58,161 +91,52 @@ export default function PassportForm() {
                   type="text"
                   id="lieu-naissance"
                   name="lieu-naissance"
-                  placeholder="lieu de naissance"
+                  placeholder="Lieu de naissance"
                   className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
                 />
               </div>
-              <div className="flex flex-col gap-2">
 
+              <div className="flex flex-col gap-2">
                 <input
                   type="text"
                   id="nationalite"
                   name="nationalite"
-                  placeholder="Nationationalité"
+                  placeholder="Nationalité"
                   className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
                 />
               </div>
+
               <div className="flex flex-col gap-2">
-                  <select
+                <select
                   id="sexe"
                   name="sexe"
                   className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
                 >
                   <option value="">Sexe</option>
-                  <option value="celibataire">Homme</option>
-                  <option value="marie">Femme</option>
+                  <option value="M">Masculin</option>
+                  <option value="F">Féminin</option>
                 </select>
               </div>
+
               <div className="flex flex-col gap-2">
-                  <select
+                <select
                   id="situation-familiale"
                   name="situation-familiale"
                   className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
                 >
-                  <option value="">Sélectionnez votre situation familiale</option>
-                  <option value="celibataire">Célibataire</option>
-                  <option value="marie">Marié(e)</option>
-                  <option value="veuf">Veuf(ve)</option>
-                  <option value="divorce">Divorcé(e)</option>
+                  <option value="">Situation familiale</option>
+                  <option value="single">Célibataire</option>
+                  <option value="married">Marié(e)</option>
+                  <option value="divorced">Divorcé(e)</option>
+                  <option value="widowed">Veuf/Veuve</option>
                 </select>
               </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  id="type-passeport"
-                  name="type-passeport"
-                  placeholder="Type de passeport"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  id="numero-passeport"
-                  name="numero-passeport"
-                  placeholder="Numéro du passeport"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="date"
-                  id="date-delivrance"
-                  name="Date de délivrance"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="date"
-                  id="date-expiration"
-                  name="Date d'expiration de la validité"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  id="destination-principale"
-                  name="destination-principale"
-                  placeholder="Destination principale"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  id="profession"
-                  name="profession"
-                  placeholder="Profession"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="tel"
-                  id="employeur-telephone"
-                  name="employeur-telephone"
-                  placeholder="Adresse de l'employeur"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="tel"
-                  id="employeur-telephone"
-                  name="employeur-telephone"
-                  placeholder="Numéro de téléphone de l'employeur"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  id="type-visa"
-                  name="type-visa"
-                  placeholder="Type de Visa"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="number"
-                  id="duree"
-                  name="duree"
-                  placeholder="Durée (mois)"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  id="etat"
-                  name="etat"
-                  placeholder="État"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="number"
-                  id="contact"
-                  name="contact"
-                  placeholder="Contact"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  id="observations"
-                  name="observations"
-                  placeholder="Observations"
-                  className="border border-gray-400 placeholder-gray-400 rounded-full px-3 py-2 focus:outline-none"
-                ></input>
-              </div>
+
+              {/* Add any other fields as necessary */}
             </div>
           </ModalBody>
+
+          {/* Buttons */}
           <ModalFooter>
             <Button color="danger" variant="light" onPress={onOpenChange}>
               Fermer
