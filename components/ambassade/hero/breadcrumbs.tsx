@@ -1,11 +1,11 @@
-import {Breadcrumbs, BreadcrumbItem} from "@nextui-org/react";
+import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 
-export default function App() {
+export default function BreadcrumbNav() {
   return (
     <Breadcrumbs>
-      <BreadcrumbItem>Home</BreadcrumbItem>
-      <BreadcrumbItem>L'Ambassade</BreadcrumbItem>
-      <BreadcrumbItem>L'Ambassadeur</BreadcrumbItem>
+      <BreadcrumbItem href="/">Home</BreadcrumbItem>
+      <BreadcrumbItem href="/ambassade">L'Ambassade</BreadcrumbItem>
+      <BreadcrumbItem href="/ambassadeur">L'Ambassadeur</BreadcrumbItem>
     </Breadcrumbs>
   );
 }

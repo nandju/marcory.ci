@@ -14,49 +14,49 @@ export default function Photo(){
         {
           picture:
             "/assets/images/illustrations/ambassade/card_1.png",
-          title: "card",
+          title: "card1",
 
         },
         {
             picture:
               "/assets/images/illustrations/ambassade/card_2.png",
-            title: "card",
+            title: "card2",
   
           },
           {
             picture:
               "/assets/images/illustrations/ambassade/card_3.png",
-            title: "card",
+            title: "card3",
   
           },
           {
             picture:
               "/assets/images/illustrations/ambassade/card_4.png",
-            title: "card",
+            title: "card4",
   
           },
           {
             picture:
               "/assets/images/illustrations/ambassade/card_1.png",
-            title: "card",
+            title: "card5",
   
           },
           {
             picture:
               "/assets/images/illustrations/ambassade/card_2.png",
-            title: "card",
+            title: "card6",
   
           },
           {
             picture:
               "/assets/images/illustrations/ambassade/card_3.png",
-            title: "card",
+            title: "card7",
   
           },
           {
             picture:
               "/assets/images/illustrations/ambassade/card_4.png",
-            title: "card",
+            title: "card8",
   
           },
         

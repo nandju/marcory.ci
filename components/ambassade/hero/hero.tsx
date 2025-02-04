@@ -1,5 +1,5 @@
 import Image from "next/image";
-import App from "./breadcrumbs";
+import BreadcrumbNav from "./breadcrumbs";
 
 
 
@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Texte principal */}
         <div className=" mx-auto relative right-0 md:right-80 justify-start p-8 flex flex-col gap-6">
           <div className="text-5xl">L&apos;Ambassade</div>
-          <App/>
+          <BreadcrumbNav/>
         </div>
 
         
