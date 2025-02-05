@@ -4,7 +4,10 @@ import Hero from "@/components/ambassade/hero/hero";
 import Juridiction from "@/components/ambassade/juridiction/juridiction";
 import Photo from "@/components/ambassade/photo/photo";
 import Monument from "@/components/tourisme/monument/monument";
-
+import President from "@/components/tourisme/president/president";
+import Statistic from "@/components/tourisme/statistic/statistic";
+import History from "@/components/tourisme/history/history";
+import Geography from "@/components/tourisme/geography/geography";
 
 export default function Ambassade(){
     return(
@@ -15,6 +18,10 @@ export default function Ambassade(){
             <Photo/>
             <Juridiction/>
             <Monument/>
+            <President/>
+            <Statistic/>
+            <History/>
+            <Geography/>
         </div>
     );
 }
