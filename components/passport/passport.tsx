@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Images } from 'lucide-react';
-import { Button } from '@nextui-org/react';
+import { Button, Link } from '@nextui-org/react';
 
 export default function PassportForm() {
   return (
@@ -90,9 +90,11 @@ export default function PassportForm() {
 
         {/* Buttons */}
         <div className="flex justify-between">
+          <Link href="/passport/condition">
           <Button className="bg-transparent text-secondary border border-secondary">
             Voir les conditions
           </Button>
+          </Link>
           <Button color="secondary" className="text-white">
             Envoyer
           </Button>

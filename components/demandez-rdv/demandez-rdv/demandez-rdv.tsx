@@ -2,8 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import { Images } from 'lucide-react';
 import { Button, Link } from '@nextui-org/react';
+import App from '../calendar/calendar';
 
-export default function Condition() {
+export default function RDV() {
   return (
     <div className="relative flex items-center justify-center w-full h-[calc(100vh-70px)] font-mulish">
       {/* Image d'arrière-plan */}
@@ -26,7 +27,7 @@ export default function Condition() {
 
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-gray-600 mb-4">Formulaire de carte consulaire</h1>
+          <h1 className="text-gray-600 mb-4">Demandez un rendez-vous</h1>
           <div className="flex items-center justify-center gap-4">
             <Image 
               src="/assets/images/illustrations/formulaire/logo.png"
@@ -41,38 +42,46 @@ export default function Condition() {
         {/* Photo upload area */}
         <div className=" mx-auto mb-8 text-primary font-semibold flex items-start justify-start relative">
           <div>
-            Documents à fournir : 
+            Informations personnelles 
           </div>
         </div>
 
-        
+
 
         {/* Form fields */}
-        <div className="flex flex-row items-center justify-between px-10 py-6">
-                {/* Liste numérotée à gauche */}
-                <div className="w-auto md:w-1/2">
-                    <ol className="list-decimal list-outside space-y-2 text-sm text-gray-700">
-                    <li>Acte de Naissance</li>
-                    <li>copie de passeport</li>
-                    <li>2 photos d’identité</li>
-                    </ol>
-                </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <input
+            type="text"
+            placeholder="Nom et Prénom"
+            className="w-full px-4 py-2 border border-gray-300 rounded-full"
+          />
+          <input
+            type="email"
+            placeholder="Adresse mail"
+            className="w-full px-4 py-2 border border-gray-300 rounded-full"
+          />
+          <input
+            type="number"
+            placeholder="Numéro de téléphone"
+            className="w-full px-4 py-2 border border-gray-300 rounded-full"
+          />
+          
+        </div>
 
-                {/* Image réduite au centre à droite */}
-                <div className="w-1/2 hidden md:flex justify-center">
-                    <Image
-                    src="/assets/images/illustrations/formulaire/visa.png" // Remplace par ton chemin d'image
-                    alt="Visa"
-                    width={100} // Ajuste la taille selon ton besoin
-                    height={100}
-                    className="object-contain"
-                    />
-                </div>
-                </div>
+        {/* Form fields */}
+        <div className="flex flex-col justify-start items-start gap-6 py-6">
+
+            <div className="text-primary font-semibold">
+            Réservation
+            </div>
+
+            <App/>
+
+        </div>
 
         {/* Buttons */}
         <div className="flex justify-between">
-            <Link href="/consulaire">
+            <Link href="/passport">
           <Button className="bg-transparent text-secondary border border-secondary">
             Voir le formulaire
           </Button>
