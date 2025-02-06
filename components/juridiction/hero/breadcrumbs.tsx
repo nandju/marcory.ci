@@ -5,7 +5,7 @@ export default function BreadcrumbNav() {
     <Breadcrumbs>
       <BreadcrumbItem href="/">Home</BreadcrumbItem>
       <BreadcrumbItem href="/ambassade">L'Ambassade</BreadcrumbItem>
-      <BreadcrumbItem href="/ambassade/juridiction">Nos juridictions</BreadcrumbItem>
+      <BreadcrumbItem href="/ambassadeur">L'Ambassadeur</BreadcrumbItem>
     </Breadcrumbs>
   );
 }

@@ -48,7 +48,7 @@ const Footer = () => {
                       className="cursor-pointer"
                     />
             <div className="text-2xl font-semibold font-blinker">
-              EMBASSADE DU TCHAD
+              AMBASSADE DU TCHAD
             </div>
           </div>
           <Image

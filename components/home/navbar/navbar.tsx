@@ -40,7 +40,7 @@ export default function Head() {
           {/* En-tête */}
           <div className="flex justify-between items-center w-full">
             <div className="flex flex-col">
-              <span className="text-xl font-bold">EMBASSADE DU TCHAD</span>
+              <span className="text-xl font-bold">AMBASSADE DU TCHAD</span>
               <div className="flex flex-row items-center gap-2">
                 <span className="text-orange-500 font-semibold">
                   CÔTE D&apos;IVOIRE

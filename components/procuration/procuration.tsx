@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Images } from 'lucide-react';
 import { Button } from '@nextui-org/react';
 
-export default function PassportForm() {
+export default function ProcurationForm() {
   return (
     <div className="relative flex items-center justify-center w-full h-[calc(100vh-70px)]">
       {/* Image d'arrière-plan */}
@@ -24,7 +24,7 @@ export default function PassportForm() {
 
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-gray-600 mb-4">Formulaire de demande de passeport</h1>
+          <h1 className="text-gray-600 mb-4">Formulaire de demande de procuration</h1>
           <div className="flex items-center justify-center gap-4">
             <Image 
               src="/assets/images/illustrations/formulaire/logo.png"

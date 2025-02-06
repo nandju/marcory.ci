@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Juridiction(){
+export default function Juridictions(){
     return(
         <div className="font-mulish py-16 px-8 mb-96">
             <div className="flex flex-col">

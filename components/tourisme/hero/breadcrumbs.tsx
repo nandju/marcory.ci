@@ -4,8 +4,8 @@ export default function BreadcrumbNav() {
   return (
     <Breadcrumbs>
       <BreadcrumbItem href="/">Home</BreadcrumbItem>
-      <BreadcrumbItem href="/ambassade">L'Ambassade</BreadcrumbItem>
-      <BreadcrumbItem href="/ambassade/juridiction">Nos juridictions</BreadcrumbItem>
+      <BreadcrumbItem href="/ambassade">Tourisme</BreadcrumbItem>
+      <BreadcrumbItem href="/ambassadeur">Sites touristiques</BreadcrumbItem>
     </Breadcrumbs>
   );
 }

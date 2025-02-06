@@ -3,7 +3,7 @@
 export default function CulturalText(){
     return(
         <div className="font-mulish m-8 pb-6">
-            <div className="space-y-2 mx-10">
+            <div className="space-y-2 mx-0 md:mx-10">
             <ul className="list-disc list-outside pl-5 space-y-2">
                 <li>
                 Le premier recensement de la population a eu lieu en 1993. Il évaluait la population totale du Tchad à 6 280 000 individus, dont 5,7 % de nomades (au sens strict), le reste étant constitué de sédentaires, semi-sédentaires ou transhumants. Le deuxième recensement de l’histoire du Tchad, le dernier en date, a été effectué plus de quinze ans plus tard, en 2009. Voici quelques données clefs de ce dénombrement : la population totale s’élève à 11,03 millions d’habitants (elle est estimée à 12,8 millions en 2016), dont 50,6 % de moins de 15 ans et 50,7 % de femmes. La population urbaine s’élève à 22 %, faisant du Tchad un pays majoritairement rural. Ce recensement met en évidence la très inégale répartition géographique de la population, plus de la moitié étant concentrée dans les 10 % du pays les plus au sud. Ainsi, on trouve au Tchad des disparités de densité énormes, allant de 52,4 hab/km² dans le Logone occidental à 0,1 hab/km² dans les régions du Borkou, de l’Ennedi et du Tibesti, où la population ne dépasse guère 300 000 individus dans les trois régions confondues ; à noter l’extrême disparité entre N’Djamena, près de 1 million d’habitants et la région du Tibesti, 25 000 habitants !
