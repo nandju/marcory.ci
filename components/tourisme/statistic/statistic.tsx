@@ -3,10 +3,10 @@
 export default function Statistic(){
     return(
         <div className="font-mulish m-8 pb-6">
-            <div className="flex flex-row justify-center gap-2 py-4">
-                <div className="bg-primary text-white px-40 py-1 font-medium rounded-t-md cursor-pointer">Chiffres clés</div>
-                <div className="bg-gray-300 text-white px-40 py-1 rounded-t-md hover:bg-gray-400 cursor-pointer">Histoire</div>
-                <div className="bg-gray-300 text-white px-40 py-1 rounded-t-md hover:bg-gray-400 cursor-pointer">Géographie</div>
+            <div className="flex flex-col md:flex-row justify-center gap-2 py-4">
+                <div className="bg-primary text-white px-2 md:px-40 py-1 font-medium rounded-full md:rounded-b-md cursor-pointer text-center">Chiffres clés</div>
+                <div className="bg-gray-300 text-white px-2 md:px-40 py-1 rounded-full md:rounded-b-md hover:bg-gray-400 cursor-pointer text-center">Histoire</div>
+                <div className="bg-gray-300 text-white px-2 md:px-40 py-1 rounded-full md:rounded-b-md hover:bg-gray-400 cursor-pointer text-center">Géographie</div>
             </div>
             <div className="space-y-2 ml-10">
             <ul className="list-disc list-outside pl-5 space-y-2">

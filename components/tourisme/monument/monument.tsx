@@ -62,7 +62,7 @@ export default function Monument() {
           return (
             <div
               key={items.title} 
-              className="flex flex-row justify-center gap-8"
+              className="flex flex-col md:flex-row justify-center gap-8"
             >
               <div className="overflow-hidden  relative">
                               <Image

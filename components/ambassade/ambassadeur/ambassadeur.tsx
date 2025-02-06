@@ -8,7 +8,7 @@ export default function Ambassadeur(){
             </div>
                 <div className="flex flex-col-reverse md:flex-row items-stretch justify-around gap-4">
 
-                <div className="relative w-96 flex-1 h-auto md:h-full">
+                <div className="relative w-72 md:w-96 flex-1 h-auto md:h-full">
                   <Image
                     src="/assets/images/illustrations/ambassade/ambassadeur.png"
                     alt="histoire-3"
@@ -56,7 +56,7 @@ export default function Ambassadeur(){
                 </div>
               </div>
 
-              <div className="font-mulish font-bold flex flex-col justify-center text-lg items-center py-8">
+              <div className="font-mulish font-extrabold md:font-bold flex flex-col justify-center text-lg items-center py-8">
                 <div>Sincères et chalereuses salutations.</div>
                 <div>
                 Son Excellence Monsieur Gonfouli SOUARIBA,

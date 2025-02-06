@@ -8,6 +8,7 @@ import President from "@/components/tourisme/president/president";
 import Statistic from "@/components/tourisme/statistic/statistic";
 import History from "@/components/tourisme/history/history";
 import Geography from "@/components/tourisme/geography/geography";
+import Cultural from "@/components/tourisme/cultural/cultural";
 
 export default function Ambassade(){
     return(
@@ -22,6 +23,7 @@ export default function Ambassade(){
             <Statistic/>
             <History/>
             <Geography/>
+            <Cultural/>
         </div>
     );
 }

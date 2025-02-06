@@ -16,7 +16,7 @@ export default function President(){
                               />
                 </div>
                 <div className="flex justify-between md:justify-center gap-0 md:gap-6 items-center max-w-6xl mx-auto">
-                <div className="overflow-hidden relative">
+                <div className="overflow-hidden relative hidden md:block">
                               <Image
                                   className="w-auto h-auto object-cover"
                                   src="/assets/images/illustrations/tourisme/puce.png"
