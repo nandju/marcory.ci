@@ -48,8 +48,8 @@ export default function Condition() {
         {/* Navigation items */}
 
         <div className="flex flex-col md:flex-row justify-center items-center text-center gap-2 py-4">
-                <Link href="#statistic" className="w-full md:w-auto"><div className="bg-primary text-white px-2 md:px-20 py-1 rounded-full md:rounded-b-md cursor-pointer items-center text-center text-sm w-full md:w-auto">Passport Ordinaire</div></Link>
-                <Link href="#history" className="w-full md:w-auto"><div className="bg-gray-300 text-white px-2 md:px-20 py-1 rounded-full md:rounded-b-md hover:bg-gray-400 cursor-pointer items-center text-center text-sm w-full md:w-auto">Passeport Diplomatique</div></Link>
+                <Link href="condition" className="w-full md:w-auto"><div className="bg-primary text-white px-2 md:px-20 py-1 rounded-full md:rounded-b-md cursor-pointer items-center text-center text-sm w-full md:w-auto">Passport Ordinaire</div></Link>
+                <Link href="condition-2" className="w-full md:w-auto"><div className="bg-gray-300 text-white px-2 md:px-20 py-1 rounded-full md:rounded-b-md hover:bg-gray-400 cursor-pointer items-center text-center text-sm w-full md:w-auto">Passeport Diplomatique</div></Link>
         </div>
 
         {/* Form fields */}

@@ -80,10 +80,15 @@ export default function RDV() {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-between">
-            <Link href="/passport">
-          <Button className="bg-transparent text-secondary border border-secondary">
-            Voir le formulaire
+        <div className="flex justify-start gap-3">
+            <Link href="/">
+          <Button color="default" className="text-white">
+            Annuler
+          </Button>
+          </Link>
+          <Link href="#">
+          <Button className="bg-secondary text-white">
+            Enregistrer
           </Button>
           </Link>
         </div>
