@@ -26,28 +26,28 @@ export default function Ambassadeur(){
 
                 <div className="flex flex-col gap-4 justify-between flex-1">
                   <div className="text-secondary text-5xl md:text-3xl font-semibold">
-                    Bienvenue sur le Site de l'Ambassade du Tchad en Côte d’Ivoire
+                    Bienvenue sur le Site de l&apos;Ambassade du Tchad en Côte d’Ivoire
                   </div>
                   <div className="font-mulish text-xl md:text-base">
-                    L'Ambassade de la République du Tchad auprès de la République de Turquie, placée 
-                    sous l'autorité de Son Excellence
+                    L&apos;Ambassade de la République du Tchad auprès de la République de Turquie, placée 
+                    sous l&apos;autorité de Son Excellence
                     Monsieur Gonfouli SOUARIBA, Ambassadeur Extraordinaire et Plénipotentiaire, a été
                     créée en 2014 avec Résidence à Ankara. Outre, son Ambassade dont le siège se trouve
                     à Ankara, capitale administrative et politique de la Turquie, le Tchad dispose
-                    d'un Consulat honoraire à Istanbul.
+                    d&apos;un Consulat honoraire à Istanbul.
                     
-                    Il n'est pas superflu de rappeler que l'Ambassade du Tchad en Turquie a pour vocation
+                    Il n&apos;est pas superflu de rappeler que l&apos;Ambassade du Tchad en Turquie a pour vocation
                     de promouvoir de bonnes relations entre nos deux (02) pays (Tchad et Turquie).
-                    L'objectif principal de notre site est donc de fournir à tous l'actualité la plus récente
+                    L&apos;objectif principal de notre site est donc de fournir à tous l&apos;actualité la plus récente
                     dans le développement de nos relations, les meilleures informations et services en vue
-                    de faciliter les séjours en Turquie de nos compatriotes, et enfin, d'offrir aux visiteurs de
+                    de faciliter les séjours en Turquie de nos compatriotes, et enfin, d&apos;offrir aux visiteurs de
                     tous horizons, une vision authentique, multidimensionnelle et complète du Tchad.
                     
-                    Nous avons l'immense plaisir de vous guider à travers le Tchad, Pays de Toumaî,
-                    Berceau de l'Humanité, avec ses paysages pittoresques et variés, constitués des zones
+                    Nous avons l&apos;immense plaisir de vous guider à travers le Tchad, Pays de Toumaî,
+                    Berceau de l&apos;Humanité, avec ses paysages pittoresques et variés, constitués des zones
                     montagneuses, forêts, savanes, déserts et surtout de deux (02) Sites inscrits sur la liste
-                    du Patrimoine Mondial de l'UNESCO à savoir les Lacs d'Ounianga et les Massifs de
-                    l'Ennedi.
+                    du Patrimoine Mondial de l&apos;UNESCO à savoir les Lacs d&apos;Ounianga et les Massifs de
+                    l&apos;Ennedi.
                     
                     Aussi, voudrais-je profiter de cette opportunité pour vous souhaiter, au nom du
                     Gouvernement de la République du Tchad et au mien propre, la cordiale bienvenue sur

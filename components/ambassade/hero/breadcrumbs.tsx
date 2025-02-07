@@ -12,13 +12,13 @@ export default function BreadcrumbNav() {
         <span>{">"}</span>
         <li>
           <Link href="/ambassade" className="text-white hover:underline">
-            L'Ambassade
+            L&apos;Ambassade
           </Link>
         </li>
         <span>{">"}</span>
         <li>
           <Link href="#" className="text-white">
-            L'Ambassadeur
+            L&apos;Ambassadeur
           </Link>
         </li>
       </ul>

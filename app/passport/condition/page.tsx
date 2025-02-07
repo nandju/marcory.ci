@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { Images } from 'lucide-react';
 import { Button, Link } from '@nextui-org/react';
 
 export default function Condition() {
@@ -60,8 +59,8 @@ export default function Condition() {
                     <li>Formulaire de demande de visa dûment rempli</li>
                     <li>Copie de passeport</li>
                     <li>Passeport en cours de validité (6 mois minimum)</li>
-                    <li>Lettre d‘invitation ou certificat d'hébergement ou réservation d’hôtel</li>
-                    <li>2 photos d’identité</li>
+                    <li>Lettre d&apos;invitation ou certificat d&apos;hébergement ou réservation d&apos;hôtel</li>
+                    <li>2 photos d&apos;identité</li>
                     </ol>
                 </div>
 

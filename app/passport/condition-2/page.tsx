@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { Images } from 'lucide-react';
 import { Button, Link } from '@nextui-org/react';
 
 export default function Condition() {

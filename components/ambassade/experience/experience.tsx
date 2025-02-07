@@ -21,11 +21,11 @@ export default function Experience(){
                 <li>Ancien Ministre de la Formation professionnelle et des Petits Métiers (05 février 2017 au 07 mai 2018);</li>
                 <li>Ancien Gouverneur des Régions ci-après:</li>
                 <li>1 Région du Lac-Tchad, chef lieu de la ville de Bol (2011);</li>
-                <li>20 Région de l'Ennedi Est, chef lieu de la ville d'Amdjarass (2013);</li>
+                <li>20 Région de l&apos;Ennedi Est, chef lieu de la ville d&apos;Amdjarass (2013);</li>
                 <li>0 Région du Guéra, chef lieu de la ville de Mongo (2015);</li>
-                <li>0 Région du Bahr Elghazel, chef lieu de la ville de Moussoro (2016 jusqu'au - 04 février 2017).</li>
+                <li>0 Région du Bahr Elghazel, chef lieu de la ville de Moussoro (2016 jusqu&apos;au - 04 février 2017).</li>
                 <li>Ancien Député au titre de la 2ème Législature (2002-2011);</li>
-                <li>Ancien juge Titulaire à la Haute Cour de Justice au titre de l'Assemblée Nationale de 2002 2011 (2ème Législature);</li>
+                <li>Ancien juge Titulaire à la Haute Cour de Justice au titre de l&apos;Assemblée Nationale de 2002 2011 (2ème Législature);</li>
                 <li>Ancien Responsable de la Chambre Administrative de la Cour Suprême du Tchad de 2001-2002. etc.</li>
                 </ul>
             </div>
