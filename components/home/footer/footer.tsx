@@ -6,16 +6,16 @@ import Image from 'next/image';
 const Footer = () => {
   const mainLinks = [
     { name: "L'Ambassade", href: "/ambassade" },
-    { name: "Services consulaires", href: "/services" },
+    { name: "Services consulaires", href: "/consulaire" },
     { name: "Investir Au Tchad", href: "/investir" },
     { name: "Tourisme", href: "/tourisme" },
     { name: "Menus", href: "/menus" }
   ];
 
   const quickLinks = [
-    { name: "Le Tchad", href: "/tchad" },
+    { name: "Le Tchad", href: "/tourisme/tchad-s" },
     { name: "Events", href: "/events" },
-    { name: "Sites touristiques", href: "/sites" }
+    { name: "Sites touristiques", href: "/tourisme/" }
   ];
 
   const legalLinks = [

@@ -18,9 +18,11 @@ export default function PassportForm() {
       {/* Formulaire */}
       <div className="relative w-full max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-6 z-10">
         {/* Close button */}
-        <button className="absolute right-4 top-4 text-gray-500 hover:text-gray-700">
-          ✕
-        </button>
+        <Link href="/" className="absolute right-4 top-4">
+                <button className=" text-gray-500 hover:text-gray-700">
+                  ✕
+                </button>
+                </Link>
 
         {/* Header */}
         <div className="text-center mb-8">

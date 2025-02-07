@@ -13,7 +13,7 @@ export default function Head() {
   const menuItems = [
     { name: "Accueil", link: "/" },
     { name: "L'Ambassade", link: "/ambassade" },
-    { name: "Services consulaires", link: "/services" },
+    { name: "Services consulaires", link: "/consulaire" },
     { name: "Investir au Tchad", link: "/investir" },
     { name: "Tourisme", link: "/tourisme" },
     { name: "Menus", link: "/menus" },

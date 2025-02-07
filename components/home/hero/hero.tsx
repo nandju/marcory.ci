@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { FileText } from "lucide-react";
+import Link from "next/link";
 
 
 export default function Hero() {
@@ -18,7 +19,9 @@ export default function Hero() {
         {/* Texte principal */}
         <div className="bg-black/30 mx-auto relative right-0 md:right-80 justify-start p-8 flex flex-col gap-6">
           <div className="text-5xl">Bienvenue au <br />Tchad</div>
-          <Button color="secondary" className="text-white">Prendre un rendez-vous</Button>
+          <Link href="/demandez-rdv" className="w-full">
+          <Button color="secondary" className="text-white w-full">Prendre un rendez-vous</Button>
+          </Link>
         </div>
 
         {/* Bouton bien espacé */}
@@ -27,7 +30,9 @@ export default function Hero() {
             <FileText size={32} className="text-white" />
             Demande de passeport et de visa
           </div>
+          <Link href="/passport">
           <Button color="secondary" className="text-white">Ouvrir maintenant</Button>
+          </Link>
         </div>
       </div>
 

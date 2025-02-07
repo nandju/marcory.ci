@@ -1,11 +1,27 @@
-import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function BreadcrumbNav() {
   return (
-    <Breadcrumbs>
-      <BreadcrumbItem href="/">Home</BreadcrumbItem>
-      <BreadcrumbItem href="/ambassade">Tourisme</BreadcrumbItem>
-      <BreadcrumbItem href="/ambassadeur">Sites touristiques</BreadcrumbItem>
-    </Breadcrumbs>
+    <nav className="text-white font-extralight text-lg">
+      <ul className="flex space-x-2">
+        <li>
+          <Link href="/" className="text-white hover:underline">
+            Home
+          </Link>
+        </li>
+        <span>{">"}</span>
+        <li>
+          <Link href="/tourisme" className="text-white hover:underline">
+            Tourisme
+          </Link>
+        </li>
+        <span>{">"}</span>
+        <li>
+          <Link href="#" className="text-white">
+            Sites touristiques
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
