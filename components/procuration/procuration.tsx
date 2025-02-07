@@ -5,7 +5,7 @@ import { Button } from '@nextui-org/react';
 
 export default function ProcurationForm() {
   return (
-    <div className="relative flex items-center justify-center w-full h-[calc(100vh-70px)]">
+    <div className="relative flex items-center justify-center w-full p-10 min-h-[calc(100vh-70px)]">
       {/* Image d'arrière-plan */}
       <Image
         className="absolute inset-0 w-full h-full object-cover"
