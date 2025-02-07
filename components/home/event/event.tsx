@@ -13,19 +13,19 @@ export default function Event() {
     {
       title: "Services consulaire",
       image: "/assets/images/illustrations/page-accueil/card-2.png",
-      link: "/services",
+      link: "/consulaire",
       alt: "Passeports sur une carte"
     },
     {
       title: "Le Tchad",
       image: "/assets/images/illustrations/page-accueil/card-3.png",
-      link: "/tchad",
+      link: "/tourisme/tchad-s",
       alt: "Monument au Tchad"
     },
     {
       title: "Events",
       image: "/assets/images/illustrations/page-accueil/card-4.png",
-      link: "/events",
+      link: "/tourisme/peuples-et-cultures",
       alt: "Événement diplomatique"
     }
   ];
