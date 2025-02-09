@@ -5,7 +5,7 @@ import App from '../calendar/calendar';
 
 export default function RDV() {
   return (
-    <div className="relative flex items-center justify-center w-full h-[calc(100vh-70px)] font-mulish">
+    <div className="relative flex items-center justify-center w-full p-10 min-p-10 min-h-[calc(100vh-70px)] font-mulish">
       {/* Image d'arrière-plan */}
       <Image
         className="absolute inset-0 w-full h-full object-cover"

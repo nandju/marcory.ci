@@ -6,16 +6,51 @@ import { Mail, Phone, Search, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  // NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  // navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+
 export default function Head() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const menuItems = [
+  const menuItems: {
+    name: string;
+    link?: string;
+    children?:
+      | {
+          name: string;
+          link: string;
+        }[]
+      | undefined;
+  }[] = [
     { name: "Accueil", link: "/" },
-    { name: "L'Ambassade", link: "/ambassade" },
+    {
+      name: "L'Ambassade",
+
+      children: [
+        { name: "ambassadeur", link: "/ambassade" },
+        { name: "juridiction", link: "/ambassade" },
+      ],
+    },
     { name: "Services consulaires", link: "/consulaire" },
     { name: "Investir au Tchad", link: "/investir" },
-    { name: "Tourisme", link: "/tourisme" },
+    {
+      name: "Tourisme",
+
+      children: [
+        { name: "Site touristique", link: "/tourisme" },
+        { name: "Le Tchad", link: "/tourisme" },
+        { name: "les peuples et cultures", link: "/tourisme" },
+      ],
+    },
     { name: "Menus", link: "/menus" },
   ];
 
@@ -58,7 +93,10 @@ export default function Head() {
             {/* Langues + Recherche */}
             <div className="flex gap-4 items-center">
               <div className="flex gap-2">
-                <Link href="/fr" className="text-sm text-red-500 hover:underline">
+                <Link
+                  href="/fr"
+                  className="text-sm text-red-500 hover:underline"
+                >
                   FR
                 </Link>
                 <span className="text-sm text-white">|</span>
@@ -88,26 +126,62 @@ export default function Head() {
               </span>
               <span className="flex items-center gap-2">
                 <Mail size={16} />
-                <span className="text-sm">Email: contact@ambassadetchad.com</span>
+                <span className="text-sm">
+                  Email: contact@ambassadetchad.com
+                </span>
               </span>
             </div>
 
             {/* Menu Desktop */}
-            <div className="flex gap-4">
-              {menuItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.link}
-                  className={`text-sm px-2 ${
-                    pathname === item.link
-                      ? "bg-white text-[#00205B] rounded-full"
-                      : "text-white hover:bg-[#123682] rounded-full transition-colors"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+            <NavigationMenu>
+              <NavigationMenuList>
+                {menuItems.map((menu, index) => {
+                  return (
+                    <NavigationMenuItem key={index}>
+                      {menu.children && !menu.link ? (
+                        <>
+                          <NavigationMenuTrigger className="bg-transparent hover:bg-transparent">
+                            <span
+                              key={menu.name}
+                              className={`text-sm px-2 ${"text-white hover ransition-colors hover:font-bold rounded-full"}`}
+                            >
+                              {menu.name}
+                            </span>
+                          </NavigationMenuTrigger>
+                          <NavigationMenuContent className="z-10">
+                            <ul className="grid w-[600px] bg-primary  gap-3 p-4">
+                              {menu?.children?.map((child, x) => {
+                                return (
+                                  <Link
+                                    href={child.link}
+                                    className="text-white hover:bg-[#123682]"
+                                    key={x}
+                                  >
+                                    {child.name}
+                                  </Link>
+                                );
+                              })}
+                            </ul>
+                          </NavigationMenuContent>
+                        </>
+                      ) : (
+                        <Link
+                          key={menu.name}
+                          href={menu.link??""}
+                          className={`text-sm px-2 ${
+                            pathname === menu.link
+                              ? "bg-white text-[#00205B] rounded-full"
+                              : "text-white hover:bg-[#123682] rounded-full transition-colors"
+                          }`}
+                        >
+                          {menu.name}
+                        </Link>
+                      )}
+                    </NavigationMenuItem>
+                  );
+                })}
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
         </div>
 
@@ -126,7 +200,7 @@ export default function Head() {
           {menuItems.map((item) => (
             <Link
               key={item.name}
-              href={item.link}
+              href={item.link??""}
               className="py-2 text-lg w-full text-center border-b border-white"
               onClick={() => setMenuOpen(false)}
             >
