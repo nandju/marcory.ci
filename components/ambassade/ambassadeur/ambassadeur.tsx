@@ -15,7 +15,7 @@ export default function Ambassadeur() {
             className="object-cover"
           />
           <div className="absolute inset-x-0 bottom-4 flex justify-center ">
-            <div className=" bg-red-500 flex flex-col gap-2 justify-start font-mulish border px-6 border-white text-white">
+            <div className="  flex flex-col gap-2 justify-start font-mulish border px-6 border-white text-white">
               <div className="text-xl">Gonfouli SOUARIBA</div>
               <div className="text-base">
                 Ambassadeur du Tchad en Côte d&apos;Ivoire

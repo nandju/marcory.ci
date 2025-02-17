@@ -37,7 +37,7 @@ export default function Head() {
 
       children: [
         { name: "ambassadeur", link: "/ambassade" },
-        { name: "juridiction", link: "/ambassade" },
+        { name: "juridiction", link: "/ambassade/juridiction" },
       ],
     },
     { name: "Services consulaires", link: "/consulaire" },
@@ -47,8 +47,8 @@ export default function Head() {
 
       children: [
         { name: "Site touristique", link: "/tourisme" },
-        { name: "Le Tchad", link: "/tourisme" },
-        { name: "les peuples et cultures", link: "/tourisme" },
+        { name: "Le Tchad", link: "/tourisme/tchad-s" },
+        { name: "les peuples et cultures", link: "/tourisme/peuples-et-cultures" },
       ],
     },
     { name: "Menus", link: "/menus" },
@@ -140,21 +140,22 @@ export default function Head() {
                     <NavigationMenuItem key={index}>
                       {menu.children && !menu.link ? (
                         <>
-                          <NavigationMenuTrigger className="bg-transparent hover:bg-transparent">
-                            <span
-                              key={menu.name}
-                              className={`text-sm px-2 ${"text-white hover ransition-colors hover:font-bold rounded-full"}`}
-                            >
-                              {menu.name}
-                            </span>
-                          </NavigationMenuTrigger>
+                          <NavigationMenuTrigger className="bg-primary hover:bg-primary">
+                          <span
+                            key={menu.name}
+                            className="text-sm px-2 text-white hover:text-[#123682] transition-colors font-medium"
+                          >
+                            {menu.name}
+                          </span>
+                        </NavigationMenuTrigger>
+
                           <NavigationMenuContent className="z-10">
                             <ul className="grid w-[600px] bg-primary  gap-3 p-4">
                               {menu?.children?.map((child, x) => {
                                 return (
                                   <Link
                                     href={child.link}
-                                    className="text-white hover:bg-[#123682]"
+                                    className="text-white hover:text-primary hover:bg-white p-2 rounded-lg"
                                     key={x}
                                   >
                                     {child.name}
