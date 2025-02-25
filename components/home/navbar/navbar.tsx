@@ -37,6 +37,7 @@ export default function Head() {
     },
     { name: "Services consulaires", link: "/consulaire" },
     { name: "Investir au Tchad", link: "/investir" },
+    
     {
       name: "Tourisme",
 
