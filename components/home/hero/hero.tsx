@@ -3,7 +3,6 @@ import { Button } from "@nextui-org/react";
 import { FileText } from "lucide-react";
 import Link from "next/link";
 
-
 export default function Hero() {
   return (
     <div className="relative flex items-center justify-between w-full h-[calc(100vh-70px)]">
@@ -15,23 +14,31 @@ export default function Hero() {
       />
       <div className="absolute w-full h-full bg-black/5 px-4"></div>
 
-      <div className="absolute px-4 pt-4 inset-0 flex flex-col bottom-2 items-start justify-center text-left text-white text-xl sm:text-2xl lg:text-2xl font-semibold gap-20 lg:gap-32">
+      <div className="z-[2] px-4 pt-16 w-full flex flex-col lg:ml-40 items-center xl:items-start justify-center text-left text-white text-xl sm:text-2xl lg:text-2xl font-semibold gap-20 lg:gap-32">
         {/* Texte principal */}
-        <div className="bg-black/30 mx-auto relative right-0 md:right-80 justify-start p-8 flex flex-col gap-6">
-          <div className="text-5xl">Bienvenue au <br />Tchad</div>
+        <div className="bg-black/30 max-w-screen-md relative justify-start p-8 flex flex-col gap-6">
+          <div className="text-2xl md:text-5xl whitespace-pre-line tracking-wide">
+            Bienvenue à l&apos;Ambassade <br />
+            de la République du TCHAD  <br />
+            en Côte d&apos;Ivoire
+          </div>
           <Link href="/demandez-rdv" className="w-full">
-          <Button color="secondary" className="text-white w-full">Prendre un rendez-vous</Button>
+            <Button color="secondary" className="text-white w-full">
+              Prendre un rendez-vous
+            </Button>
           </Link>
         </div>
 
         {/* Bouton bien espacé */}
-        <div className="flex relative mx-auto justify-between items-center gap-4 md:gap-0 bg-primary w-full md:w-5/6 p-6">
+        <div className="flex flex-col sm:flex-row relative justify-between items-center gap-4 md:gap-0 bg-primary w-full md:w-5/6 p-6">
           <div className="text-lg font-extralight flex items-center gap-2">
             <FileText size={32} className="text-white" />
-            Demande de passeport et de visa
+            Demande de carte consulaire et de visa
           </div>
           <Link href="/passport">
-          <Button color="secondary" className="text-white">Ouvrir maintenant</Button>
+            <Button color="secondary" className="text-white">
+              Ouvrir maintenant
+            </Button>
           </Link>
         </div>
       </div>

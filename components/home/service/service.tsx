@@ -16,8 +16,8 @@ const service: Service[] = [
   },
   {
     picture: "/assets/images/illustrations/page-accueil/card-items-2.png",
-    title: "PASSEPORT",
-    link: "/passport",
+    title: "LAISSEZ-PASSER",
+    link: "/laissez-passer",
   },
   {
     picture: "/assets/images/illustrations/page-accueil/card-items-3.png",
@@ -47,7 +47,7 @@ export default function Service() {
       <div className="flex flex-col justify-center gap-2">
         <div className="flex flex-col md:flex-row justify-between my-4 sm:gap-4 gap-0 lg:gap-4">
           <div className="md:text-lg lg:text-4xl text-center font-semibold md:text-start text-secondary sm:my-2 my-0 lg:my-2">
-            NOS SERVICES
+            NOS SERVICES CONSULAIRES
           </div>
           <Button color="default" className="mt-4 text-secondary">
             Voir plus
