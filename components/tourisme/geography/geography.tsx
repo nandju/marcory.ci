@@ -27,7 +27,7 @@ export default function Geography(){
             <ul className="list-disc list-outside pl-5 space-y-2">
                 <li>Le relief du Tchad est comparable à une cuvette bordée par deux couronnes de montagnes et de plateau : au Nord avec le massif de Tibesti ( 3415 m au volcan de l’Emi Koussi) et à l’Est par le plateau gréseux de l’Ouaddaï (1360m) s’abaissant vers le Sud-Ouest. La zone la plus basse est occupée par le Lac Tchad, réceptacle final de vastes plaines d’inondation des fleuves Chari et Logone.
                 </li>
-                <li>Ces deux fleuves constituent l’unique réseau fluvial : le Cari coule sur 1200km depuis la Centrafrique et son principal affluent le Logone naît au Cameroun sur 1000km. Tous deux confluent à l’approche de la capitale. Ils sont en partie navigables quatre mois par an. Il y a cinq lacs principaux : Tchad, Fitri, Iro, Lere, Tekem. Les eaux y sont très poissonneuses mais rendues dangereuses par la bilharziose et le ver de Guinée
+                <li>Ces deux fleuves constituent l’unique réseau fluvial : le Chari coule sur 1200km depuis la Centrafrique et son principal affluent le Logone naît au Cameroun sur 1000km. Tous deux confluent à l’approche de la capitale. Ils sont en partie navigables quatre mois par an. Il y a cinq lacs principaux : Tchad, Fitri, Iro, Lere, Tekem.
                 </li>
             </ul>
             </div>
