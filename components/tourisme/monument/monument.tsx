@@ -22,12 +22,6 @@ const monument: Monuments[] = [
   },
   {
     picture:
-      "/assets/images/illustrations/tourisme/card_3.png",
-    title: "La mosquée Fayçal",
-    subtitle:"Si l’architecture et les édifices religieux vous fascinent, ne quittez pas N’Djamena sans avoir visité la mosquée Fayçal. Subventionnée par le roi Fayçal d’Arabie Saoudite, la mosquée en impose par ses minarets. En tenue décente, en dehors des heures de prière et sur autorisation de l’imam, vous avez la possibilité de visiter l’intérieur."
-},
-  {
-    picture:
       "/assets/images/illustrations/tourisme/card_4.png",
     title: "Le lac Léré",
     subtitle: "L’ouest du Tchad conserve une tranquillité que le temps ne semble pas altérer. Sur la route de Léré, vous prendrez du plaisir à admirer le paysage, succession de falaises et de vallées verdoyantes. Au bord du lac, se côtoient pêcheurs lavandières et baigneurs. Le lac est connu pour être encore l’un des rares à abriter des lamantins, une espèce rare et protégée. Dans les filets des pêcheurs, on retrouve de délicieuses carpes qui n’attendent plus que d’être fumées." 

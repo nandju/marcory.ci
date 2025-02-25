@@ -6,7 +6,6 @@ import { Mail, Phone, Search, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -34,11 +33,7 @@ export default function Head() {
     { name: "Accueil", link: "/" },
     {
       name: "L'Ambassade",
-
-      children: [
-        { name: "ambassadeur", link: "/ambassade" },
-        { name: "juridiction", link: "/ambassade/juridiction" },
-      ],
+      link: "/ambassade",
     },
     { name: "Services consulaires", link: "/consulaire" },
     { name: "Investir au Tchad", link: "/investir" },
@@ -48,10 +43,13 @@ export default function Head() {
       children: [
         { name: "Site touristique", link: "/tourisme" },
         { name: "Le Tchad", link: "/tourisme/tchad-s" },
-        { name: "les peuples et cultures", link: "/tourisme/peuples-et-cultures" },
+        {
+          name: "les peuples et cultures",
+          link: "/tourisme/peuples-et-cultures",
+        },
       ],
     },
-    { name: "Menus", link: "/menus" },
+    // { name: "Menus", link: "/menus" },
   ];
 
   return (
@@ -75,19 +73,9 @@ export default function Head() {
           {/* En-tête */}
           <div className="flex justify-between items-center w-full">
             <div className="flex flex-col">
-              <span className="text-xl font-bold">AMBASSADE DU TCHAD</span>
-              <div className="flex flex-row items-center gap-2">
-                <span className="text-orange-500 font-semibold">
-                  CÔTE D&apos;IVOIRE
-                </span>
-                <Image
-                  src="/assets/images/logo_1.png"
-                  alt="Ivory Coast Flag"
-                  width={20}
-                  height={15}
-                  className="cursor-pointer"
-                />
-              </div>
+              <span className="text-xl font-bold">
+                AMBASSADE DU TCHAD CÔTE D&apos;IVOIRE
+              </span>
             </div>
 
             {/* Langues + Recherche */}
@@ -100,8 +88,8 @@ export default function Head() {
                   FR
                 </Link>
                 <span className="text-sm text-white">|</span>
-                <Link href="/ar" className="text-sm text-white hover:underline">
-                  AR
+                <Link href="/en" className="text-sm text-white hover:underline">
+                  EN
                 </Link>
               </div>
 
@@ -141,13 +129,13 @@ export default function Head() {
                       {menu.children && !menu.link ? (
                         <>
                           <NavigationMenuTrigger className="bg-primary hover:bg-primary">
-                          <span
-                            key={menu.name}
-                            className="text-sm px-2 text-white hover:text-[#123682] transition-colors font-medium"
-                          >
-                            {menu.name}
-                          </span>
-                        </NavigationMenuTrigger>
+                            <span
+                              key={menu.name}
+                              className="text-sm px-2 text-white hover:text-[#123682] transition-colors font-medium"
+                            >
+                              {menu.name}
+                            </span>
+                          </NavigationMenuTrigger>
 
                           <NavigationMenuContent className="z-10">
                             <ul className="grid w-[600px] bg-primary  gap-3 p-4">
@@ -168,7 +156,7 @@ export default function Head() {
                       ) : (
                         <Link
                           key={menu.name}
-                          href={menu.link??""}
+                          href={menu.link ?? ""}
                           className={`text-sm px-2 ${
                             pathname === menu.link
                               ? "bg-white text-[#00205B] rounded-full"
@@ -201,7 +189,7 @@ export default function Head() {
           {menuItems.map((item) => (
             <Link
               key={item.name}
-              href={item.link??""}
+              href={item.link ?? ""}
               className="py-2 text-lg w-full text-center border-b border-white"
               onClick={() => setMenuOpen(false)}
             >

@@ -1,50 +1,36 @@
-
 import Image from "next/image";
 
-export default function Presentation(){
-    return(
+export default function Presentation() {
+  return (
     <div className="flex flex-col gap-4 p-6 m-4">
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-4 p-6 m-4">
-        <div className="relative w-80 h-80">
-          <Image
-            src="/assets/images/illustrations/page-accueil/country.png"
-            alt="histoire-3"
-            layout="fill"
-            objectFit="contain"
-
-          />
-        </div>
-          <div className="flex flex-col gap-8">
-            <div className="text-secondary text-5xl md:text-3xl font-semibold">
-            Bienvenue à l&apos;ambassade du TCHAD à Abidjan,<br />en Côte d&apos;Ivoire
-            </div>
-            <div className="font-mulish text-xl md:text-base">
-            L&apos;ambassade du Tchad à Abidjan est accréditée en Côte d&apos;Ivoire pour le maintien et le renforcement des <br />relations diplomatiques entre le Tchad et la Côte d&apos;Ivoire. La mission est également responsable de la <br /> coordination, de la promotion et de la protection des intérêts nationaux du Tchad et des Tchadiens dans <br />le pays hôte de manière à contribuer de manière significative à l&apos;amélioration de la sécurité et au <br />développement socio-économique du pays.
-            </div>
-          </div>
-
-      </div>
-      <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-4 p-6 m-4">
-        <div className="relative w-80 h-80">
+      <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-4">
+        <div className="relative w-80 h-80 shrink-0">
           <Image
             src="/assets/images/illustrations/page-accueil/leader.png"
             alt="histoire-3"
             layout="fill"
             objectFit="contain"
-
           />
         </div>
-          <div className="flex flex-col gap-8">
-            <div className="text-secondary text-5xl md:text-3xl font-semibold">
+        <div className="flex flex-col gap-8 max-w-screen-sm">
+          <div className="text-secondary text-3xl md:text-3xl font-semibold">
             Mot de l’Ambassadeur
-            </div>
-            <div className="font-mulish text-xl md:text-base">
-            L’Ambassade du Tchad en République fédérale d’Côte D’Ivoire a pour mission de mettre en <br /> œuvre la politique étrangère de la République du Tchad relative aux diverses relations <br /> politiques, économiques, culturelles, etc en Côte D’Ivoire et dans les autres pays sous <br /> juridiction. <br />
-            Notre site qui permet ainsi que d’autres canaux de favoriser ces diverses relations est <br /> au service de tous et de toutes ceux et celles qui veulent avoir des informations sur le Tchad et <br /> sur les services que peut offrir le service des Affaires Consulaires aux ressortissants <br /> Tchadiens et à toute personne ou groupes, sociétés ou Associations désireuses de visiter le <br /> Tchad, Pays de Toumaï.
-            </div>
           </div>
-
+          <div className="font-mulish text-justify text-sm md:text-base">
+            L’Ambassade du Tchad en République fédérale d’Côte D’Ivoire a pour
+            mission de mettre en œuvre la politique étrangère de la République
+            du Tchad relative aux diverses relations politiques, économiques,
+            culturelles, etc en Côte D’Ivoire et dans les autres pays sous
+            juridiction. Notre site qui permet ainsi que d’autres canaux de
+            favoriser ces diverses relations est au service de tous et de toutes
+            ceux et celles qui veulent avoir des informations sur le Tchad et
+            sur les services que peut offrir le service des Affaires Consulaires
+            aux ressortissants Tchadiens et à toute personne ou groupes,
+            sociétés ou Associations désireuses de visiter le Tchad, Pays de
+            Toumaï.
+          </div>
+        </div>
       </div>
     </div>
-    );
+  );
 }
