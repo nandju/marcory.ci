@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook } from 'lucide-react';
 import Image from 'next/image';
+import { Tooltip } from '@nextui-org/react';
 
 const Footer = () => {
   const mainLinks = [
     { name: "L'Ambassade", href: "/ambassade" },
     { name: "Services consulaires", href: "/consulaire" },
-    { name: "Investir Au Tchad", href: "/investir" },
+    { name: "Investir Au Tchad", href: "https://anie.td/accueil/qui-sommes-nous/" },
     { name: "Tourisme", href: "/tourisme" },
     { name: "Menus", href: "/menus" }
   ];
@@ -27,10 +28,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { href: "#", icon: <Facebook className="w-6 h-6 text-[#002B7F]" /> },
-    { href: "#", icon: <Linkedin className="w-6 h-6 text-[#002B7F]" /> },
-    { href: "#", icon: <Instagram className="w-6 h-6 text-[#002B7F]" /> },
-    { href: "#", icon: <Twitter className="w-6 h-6 text-[#002B7F]" /> },
+    { href: "https://www.facebook.com/share/1Dx5XFzv8D/", icon: <Facebook className="w-6 h-6 text-[#002B7F]" />, name: "TCHAD DIPLOMATIE" },
+    { href: "https://www.facebook.com/share/1B6ViF7jTe/", icon: <Facebook className="w-6 h-6 text-[#002B7F]" />, name: "Secrétariat général du gouvernement" },
+    { href: "https://www.facebook.com/share/1Dx5XFzv8D/", icon: <Facebook className="w-6 h-6 text-[#002B7F]" />, name: "Ambassade du Tchad en Côte d'Ivoire" },
   ];
 
   return (
@@ -74,13 +74,16 @@ const Footer = () => {
             {/* Social Media Links */}
             <div className="flex gap-4 pt-4">
               {socialLinks.map((link, index) => (
+                <Tooltip key={link.name} content={link.name}>
                 <a 
                   key={index} 
                   href={link.href} 
+                  target="_blank"
                   className="bg-white rounded-full p-3 hover:bg-gray-200 transition"
                 >
                   {link.icon}
                 </a>
+                </Tooltip>
               ))}
             </div>
           </div>

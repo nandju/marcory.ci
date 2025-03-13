@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="relative flex items-center justify-between w-full h-[calc(100vh-200px)]">
       <Image
         className="absolute inset-0 w-full h-full object-cover shrink-0"
-        src="/assets/images/backgrounds/background.png"
+        src="/assets/images/backgrounds/bg-tourisme.png"
         alt="herosection"
         fill
       />

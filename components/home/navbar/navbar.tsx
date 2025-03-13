@@ -36,7 +36,7 @@ export default function Head() {
       link: "/ambassade",
     },
     { name: "Services consulaires", link: "/consulaire" },
-    { name: "Investir au Tchad", link: "/investir" },
+    { name: "Investir au Tchad", link: "https://anie.td/accueil/qui-sommes-nous/" },
     
     {
       name: "Tourisme",
@@ -111,12 +111,12 @@ export default function Head() {
             <div className="flex flex-col text-white">
               <span className="flex items-center gap-2">
                 <Phone size={16} />
-                <span className="text-sm">Tel: +49 30 30 30 30 30</span>
+                <span className="text-sm">Tel: +225 27 22 39 49 13</span>
               </span>
               <span className="flex items-center gap-2">
                 <Mail size={16} />
                 <span className="text-sm">
-                  Email: contact@ambassadetchad.com
+                  Email: ambassade.tchadabj@ambatchad.ci
                 </span>
               </span>
             </div>

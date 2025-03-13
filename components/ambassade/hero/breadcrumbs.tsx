@@ -16,11 +16,11 @@ export default function BreadcrumbNav() {
           </Link>
         </li>
         <span>{">"}</span>
-        <li>
+        {/* <li>
           <Link href="#" className="text-white">
             L&apos;Ambassadeur
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

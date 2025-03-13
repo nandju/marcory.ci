@@ -9,66 +9,54 @@ type Monuments = {
 
 const monument: Monuments[] = [
   {
-    picture:
-      "/assets/images/illustrations/tourisme/card_1.png",
-    title: "Les lacs Ounianga",
-    subtitle: "Également appelés les perles du désert, les lacs Ounianga sont une succession d’une dizaine de lacs dont le plus connu, l’Ounianga Kébir. Le spectacle d’oasis au milieu du désert est saisissant de beauté. Si vous avez l’occasion de visiter les lacs Ounianga pendant l’une des rares saisons de pluie, vous aurez le privilège d’admirer les caravanes organisées par les populations avoisinantes.",
+    picture: "/assets/images/illustrations/tourisme/card1.png",
+    title: "Lac Katam",
+    subtitle: "Situé dans la région de l'Ennedi, le lac Katam est l'un des lacs du système d'Ounianga Kébir. Il se distingue par ses deux parties séparées par une étroite langue de sable, offrant des eaux aux teintes bleues et vertes en raison de la présence d'algues spécifiques.",
   },
   {
-    picture:
-      "/assets/images/illustrations/tourisme/card_2.png",
-    title: "Le parc national de Zakouma",
-    subtitle: "Comptant parmi les plus grands parcs d’Afrique, le parc national de Zakouma dispose d’une réserve naturelle unique. Un safari et un campement au cœur du parc vous offrent l’opportunité d’observer de près la faune exceptionnelle du Tchad. La ville abritant le parc n’est pas sans attrait non plus. Plongez le temps d’un séjour dans le quotidien des habitants de Zakouma, dépaysement garanti."
+    picture: "/assets/images/illustrations/tourisme/card2.png",
+    title: "Lac Fianga",
+    subtitle: "Le lac Fianga, situé à la frontière entre le Tchad et le Cameroun, est alimenté par les eaux du Logone et du Mayo Kébbi. Ses niveaux d'eau varient selon les saisons, offrant des paysages changeants et une biodiversité riche.",
   },
   {
-    picture:
-      "/assets/images/illustrations/tourisme/card_4.png",
-    title: "Le lac Léré",
-    subtitle: "L’ouest du Tchad conserve une tranquillité que le temps ne semble pas altérer. Sur la route de Léré, vous prendrez du plaisir à admirer le paysage, succession de falaises et de vallées verdoyantes. Au bord du lac, se côtoient pêcheurs lavandières et baigneurs. Le lac est connu pour être encore l’un des rares à abriter des lamantins, une espèce rare et protégée. Dans les filets des pêcheurs, on retrouve de délicieuses carpes qui n’attendent plus que d’être fumées." 
-},
+    picture: "/assets/images/illustrations/tourisme/card3.png",
+    title: "Lac Tchad",
+    subtitle: "Le lac Tchad est l'un des plus grands lacs d'Afrique, bien que sa superficie ait diminué au fil des décennies. Il reste une ressource vitale pour des millions de personnes et abrite une biodiversité unique.",
+  },
   {
-    picture:
-      "/assets/images/illustrations/tourisme/card_5.png",
-    title: "Le musée national",
-    subtitle: "À la croisée des routes caravanières et considéré comme le berceau de l’humanité grâce à des découvertes paléontologiques majeures, le Tchad est riche de son histoire et de sa culture. Au musée national situé à N’Djamena, vous aurez le loisir d’admirer le Tchad au fil du temps. Des expositions permanentes et temporaires explorent l’archéologie, la paléontologie, l’histoire et la culture des divers peuples qui ont vécu au Tchad il y a quelques milliers d’années."
- },
+    picture: "/assets/images/illustrations/tourisme/card4.png",
+    title: "Lac Yoa",
+    subtitle: "Le lac Yoa est le plus grand des lacs d'Ounianga Kébir, avec une profondeur atteignant 20 mètres. Situé au cœur du désert du Sahara, il est alimenté par des nappes phréatiques fossiles, témoignant d'une époque où le climat de la région était plus humide.",
+  },
   {
-    picture:
-      "/assets/images/illustrations/tourisme/card_6.png",
-    title: "Le massif du Tibesti",
-    subtitle: "Une grande partie du Tchad est couverte par le désert. Au nord du pays, on retrouve celui du Tibesti et son massif montagneux. Les plus aventuriers pourraient en envisager l’ascension jusqu’à son point culminant, l’Emi koussi. Plus haut sommet du Tchad et du Sahara, l’Emi Koussi est un volcan éteint qui offre une vue panoramique du désert. Le Tibesti, c’est également des palmeraies, des sources thermales et des gravures rupestres qui ne laissent aucun visiteur indifférent."
-},
-  {
-    picture:
-      "/assets/images/illustrations/tourisme/card_7.png",
-    title: "Les iles flottantes du lac Tchad",
-    subtitle: "Le lac Tchad est célèbre pour sa faune et sa flore, mais aussi pour ses magnifiques iles flottantes. À bord d’une pirogue, vous prendrez du plaisir à les admirer depuis les eaux douces du lac. Vous pourrez observer de près la grande diversité d’espèces dont les éléphants, les hippopotames et divers oiseaux migratoires. Comme vous pourrez le constater, le temps semble suspendu quand on vogue sur le lac Tchad."
-},
-  
+    picture: "/assets/images/illustrations/tourisme/card5.png",
+    title: "Lac Fitri",
+    subtitle: "Le lac Fitri, situé dans la région de Batha, est une zone humide importante pour l'agriculture et la pêche locales. Ses rives abritent une faune aviaire diversifiée, en faisant un lieu d'intérêt pour les ornithologues.",
+  },
 ];
+
 export default function Monument() {
   return (
-    <div className="flex flex-col justify-around p-6 lg:p-20">
-      
-      <div className="flex justify-around gap-8 flex-col mt-3 lg:mt-10">
-        {monument.map((items) => {
-          return (
-            <div
-              key={items.title} 
-              className="flex flex-col md:flex-row justify-center gap-8"
-            >
-              <div className="overflow-hidden  relative">
-                              <Image
-                                  className="w-full h-auto object-cover"
-                                  src={items.picture}
-                                  alt={items.title}
-                                  width={300} 
-                                  height={250} 
-                                  objectFit="cover" 
-                              />
-                              
+        <div className="flex flex-col justify-around p-6 lg:p-20">
+          <div className="flex justify-around gap-8 flex-col mt-3 lg:mt-10">
+            {monument.map((items) => (
+              <div
+                key={items.title}
+                className="flex flex-col md:flex-row items-center justify-center gap-8"
+              >
+                {/* Image */}
+                <div className="relative flex-1 min-w-[300px]">
+                  <Image
+                    className="w-full h-auto object-contain"
+                    src={items.picture}
+                    alt={items.title}
+                    width={300}
+                    height={250}
+                  />
                 </div>
-                <div className="flex flex-col gap-1 justify-around flex-1">
+
+                {/* Texte */}
+                <div className="flex flex-col gap-1 justify-center flex-1">
                   <div className="text-secondary text-5xl font-semibold">
                     {items.title}
                   </div>
@@ -76,10 +64,9 @@ export default function Monument() {
                     {items.subtitle}
                   </div>
                 </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+              </div>
+            ))}
+          </div>
+        </div>
   );
 }

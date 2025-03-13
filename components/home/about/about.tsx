@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { Building, Globe, MapPin, User } from 'lucide-react';
+import { Building, Globe, Mail, MapPin, Phone, User, Facebook } from 'lucide-react';
+import Link from 'next/link';
 
 
 export default function About(){
@@ -10,10 +11,10 @@ export default function About(){
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image
-                  src="/assets/images/backgrounds/background_1.png"
+                  src="/assets/images/backgrounds/bg-contact.png"
                   alt="Background"
                   fill
-                  className="object-cover object-bottom"
+                  className="object-cover object-center"
                   priority
                 />
               </div>
@@ -26,31 +27,24 @@ export default function About(){
                 <div className="container relative mx-auto px-4 py-20">
                   <div className="flex flex-col absolute top-0 left-0 bg-primary text-white w-[360px] p-4 gap-4">
                     <div className="flex items-center gap-3">
-                        <User size={24} className="text-secondary" />
+                        <Phone size={24} className="text-secondary" />
                         <div className="flex flex-col">
-                            <div>Direction</div>
-                            <div>Gonfouli SOUARIBA, Ambassadeur en Côte d&apos;Ivoire</div>
+                            <div>Numéro de téléphone</div>
+                            <div>+225 2722394913</div>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Globe size={24} className="text-secondary" />
+                        <Facebook size={24} className="text-secondary" />
                         <div className="flex flex-col">
-                        <div>Pays</div>
-                        <div>Côte d&apos;Ivoire</div>
+                        <div>Facebook</div>
+                        <Link className="hover:text-secondary" href="https://www.facebook.com/share/1Dx5XFzv8D/" target="_blank" rel="noopener noreferrer">Ambassade du Tchad en Côte d'Ivoire</Link>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Building size={24} className="text-secondary" />
+                        <Mail size={24} className="text-secondary" />
                         <div className="flex flex-col">
-                        <div>Ville</div>
-                        <div>Abidjan</div>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <MapPin size={24} className="text-secondary" />
-                        <div className="flex flex-col">
-                            <div>Adresse</div>
-                            <div>39, Blvd. Hassan II(Bvld. de la Corniche) Abidjan-Cocody</div>
+                        <div>Adresse Email</div>
+                        <div>ambassade.tchadabj@ambatchad.ci</div>
                         </div>
                     </div>
                   </div>
