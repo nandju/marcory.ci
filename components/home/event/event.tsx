@@ -6,7 +6,7 @@ export default function Event() {
   const navigationCards = [
     {
       title: "L'Ambassade",
-      image: "/assets/images/illustrations/page-accueil/card-1.png",
+      image: "/assets/images/illustrations/page-accueil/bg-ambassade-1.png",
       link: "/ambassade",
       alt: "Façade de l'Ambassade du Tchad"
     },
@@ -35,10 +35,10 @@ export default function Event() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/images/backgrounds/background_1.png"
+          src="/assets/images/backgrounds/bg-four-card.png"
           alt="Background"
           fill
-          className="object-cover object-bottom"
+          className="object-cover object-center"
           priority
         />
       </div>

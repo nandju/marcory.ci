@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Ambassadeur() {
   return (
-    <div className="p-6 m-4 md:p-12 space-y-8 mx-auto max-w-screen-xl">
-      <div className="text-secondary text-3xl md:text-5xl font-semibold">
+    <div className="p-6 m-4 lg:p-12 space-y-8 mx-auto max-w-screen-xl">
+      <div className="text-secondary text-3xl lg:text-5xl font-semibold">
         L&apos;AMBASSADEUR
       </div>
-      <div className="flex flex-col-reverse md:flex-row items-stretch justify-around gap-4 md:gap-12">
-        <div className="relative w-full max-w-96 h-[400px] md:h-[650px]">
+      <div className="flex flex-col-reverse lg:flex-row items-stretch justify-around gap-4 lg:gap-12">
+        <div className="relative w-full max-w-96 h-[400px] lg:h-[650px] mx-auto">
           <Image
             src="/assets/images/illustrations/ambassade/ambassadeur.png"
             alt="histoire-3"

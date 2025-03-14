@@ -5,7 +5,7 @@ import { Button, Link } from '@nextui-org/react';
 
 export default function PassportForm() {
   return (
-    <div className="relative flex items-center justify-center w-full min-p-10 min-h-[calc(100vh-70px)]">
+    <div className="relative flex items-center justify-center p-10 w-full min-p-10 min-h-[calc(100vh-70px)]">
       {/* Image d'arrière-plan */}
       <Image
         className="absolute inset-0 w-full h-full object-cover"
@@ -16,7 +16,7 @@ export default function PassportForm() {
       <div className="absolute inset-0 bg-blue-800/50" /> {/* Superposition bleu semi-transparente */}
 
       {/* Formulaire */}
-      <div className="relative w-full max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-6 z-10">
+      <div className="relative w-full max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-6">
         {/* Close button */}
         <Link href="/" className="absolute right-4 top-4">
                 <button className=" text-gray-500 hover:text-gray-700">

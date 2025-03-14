@@ -35,8 +35,8 @@ export default function Experience(){
         <div className="m-6">
             <div className="flex flex-col justify-center gap-6 py-4">
                 <div className="flex font-mulish flex-col justify-center items-center gap-4">
-                    <div className="text-secondary text-3xl md:text-5xl font-semibold">L'ÉQUIPE</div>
-                    <div className="text-secondary text-xl">Découvrez les membres qui font vivre l'Ambassade</div>
+                    <div className="text-secondary text-3xl md:text-5xl font-semibold">L&apos;ÉQUIPE</div>
+                    <div className="text-secondary text-xl">Découvrez les membres qui font vivre l&apos;Ambassade</div>
                 </div>
                 <div className="flex flex-row flex-wrap justify-center gap-4">
                     {Agent.map((agent, index) => (

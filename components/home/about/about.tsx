@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Building, Globe, Mail, MapPin, Phone, User, Facebook } from 'lucide-react';
+import { Mail, Phone, Facebook } from 'lucide-react';
 import Link from 'next/link';
 
 
@@ -37,7 +37,7 @@ export default function About(){
                         <Facebook size={24} className="text-secondary" />
                         <div className="flex flex-col">
                         <div>Facebook</div>
-                        <Link className="hover:text-secondary" href="https://www.facebook.com/share/1Dx5XFzv8D/" target="_blank" rel="noopener noreferrer">Ambassade du Tchad en Côte d'Ivoire</Link>
+                        <Link className="hover:text-secondary" href="https://www.facebook.com/share/1Dx5XFzv8D/" target="_blank" rel="noopener noreferrer">Ambassade du Tchad en Côte d&apos;Ivoire</Link>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">

@@ -20,7 +20,7 @@ const service: Service[] = [
     link: "/laissez-passer",
   },
   {
-    picture: "/assets/images/illustrations/page-accueil/card-items-3.png",
+    picture: "/assets/images/illustrations/page-accueil/consulaire.png",
     title: "CARTE CONSULAIRE",
     link: "/consulaire",
   },

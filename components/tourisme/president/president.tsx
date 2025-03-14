@@ -7,12 +7,12 @@ export default function President() {
         <div className="text-secondary ml-0 md:ml-4 text-3xl font-semibold text-center md:text-start">
           UN PAYS QUI ÉMERGE
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-6">
+        <div className="flex flex-col lg:flex-row items-center gap-6">
           {/* Image */}
           <div className="flex flex-1 justify-center w-full max-w-3xl">
             <Image
-              className="w-auto h-[900px] object-contain"
-              src="/assets/images/illustrations/tourisme/Photo_Officielle_final.png"
+              className="w-auto h-[900px] object-cover md:object-contain"
+              src="/assets/images/illustrations/tourisme/president-1.png"
               alt="profil"
               width={300}
               height={250}
@@ -21,7 +21,7 @@ export default function President() {
 
           {/* Texte avec puces */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md max-w-lg w-full">
-          <div className="font-extrabold text-gray-700 text-xl">MON PROJET POUR LE TCHAD</div>
+          <div className="font-black text-gray-700 text-3xl pb-7">MON PROJET POUR LE TCHAD</div>
             <ul className="list-disc list-inside space-y-3 text-gray-700 font-mulish">
               <li><span className="font-bold">CHANTIER 1 :</span> RENFORCER LA PAIX, LA RÉCONCILIATION NATIONALE ET LA SÉCURITÉ POUR TOUS LES TCHADIENS</li>
               <li><span className="font-bold">CHANTIER 2 :</span> RÉFORMER L’ÉTAT, BÂTIR UNE RÉPUBLIQUE FORTE ET JUSTE</li>
@@ -36,12 +36,12 @@ export default function President() {
               <li><span className="font-bold">CHANTIER 11 :</span> RENFORCER LE RAYONNEMENT DU TCHAD À L’ÉTRANGER ET FAIRE DE LA DIASPORA UN VÉRITABLE LEVIER DE DÉVELOPPEMENT. </li>
               <li><span className="font-bold">CHANTIER 12 :</span> PROMOUVOIR LES MERVEILLES CULTURELLES ET TOURISTIQUES DU TCHAD</li>
             </ul>
-            <div className="mt-6 flex flex-col gap-3">
+            {/* <div className="mt-6 flex flex-col gap-3">
             <div className=" font-semibold text-gray-900">
               Maréchal du Tchad IDRISS DEBY ITNO <br />
               Président de la République
             </div>
-            </div>
+            </div> */}
             
           </div>
         </div>
