@@ -1,5 +1,5 @@
 import Ambassadeur from "@/components/ambassade/ambassadeur/ambassadeur";
-import Experience from "@/components/ambassade/experience/experience";
+import TeamMember from "@/components/ambassade/experience/experience";
 import Hero from "@/components/ambassade/hero/hero";
 import Photo from "@/components/ambassade/photo/photo";
 
@@ -9,7 +9,7 @@ export default function Ambassade(){
         <div>
             <Hero/>
             <Ambassadeur/>
-            <Experience/>
+            <TeamMember/>
             <Photo/>
         </div>
     );

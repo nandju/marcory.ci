@@ -1,68 +1,95 @@
+import React from "react";
 import Image from "next/image";
+import { Facebook, Twitter, Instagram, Globe, Briefcase } from "lucide-react";
 
-export default function Experience(){
+const TeamMember = () => {
+  type Agent = {
+    name: string;
+    picture: string;
+    job: string;
+  };
 
-    type agent = {
-        name: string;
-        picture: string;
-        job: string;
-    };
+  const agents: Agent[] = [
+    {
+      name: "M. SOUARIBA Gonfouli",
+      picture: "/assets/images/illustrations/ambassade/team1.png",
+      job: "Ambassadeur du Tchad en CI ",
+    },
+    {
+      name: "M. ACHEIKH MAKAYE NIMIR",
+      picture: "/assets/images/illustrations/ambassade/team4.png",
+      job: "Premier Conseiller ",
+    },
+    {
+      name: "Mme REMADJI Christelle",
+      picture: "/assets/images/illustrations/ambassade/team2.png",
+      job: "Conseillère Économique",
+    },
+    {
+      name: "Mr Nadjo KAINA",
+      picture: "/assets/images/illustrations/ambassade/team3.png",
+      job: "Attaché",
+    },
+  ];
 
-    const Agent : agent [] = [
-        {
-            name: "",
-            picture: "/assets/images/illustrations/ambassade/team1.png",
-            job:"Son Excellence M. SOUARIBA Gonfouli,\n Ambassadeur Extraordinaire et Plenipotentiaire de la république du Tchad en CI "
-        },
-        {
-            name: "",
-            picture: "/assets/images/illustrations/ambassade/team4.png",
-            job:"M. ACHEIKH MAKAYE NIMIR,\n Premier Conseiller "
-        },
-        {
-            name: "",
-            picture: "/assets/images/illustrations/ambassade/team2.png",
-            job:"Mme REMADJI Christelle,\n Conseillère Économique",
-        },
-        {
-            name: "",
-            picture: "/assets/images/illustrations/ambassade/team3.png",
-            job:"Mr Nadjo KAINA,\n Attaché",
-        }
-    ]
+  const socialIcons = [
+    { icon: <Facebook className="w-5 h-5" />, label: "Facebook" },
+    { icon: <Twitter className="w-5 h-5" />, label: "Twitter" },
+    { icon: <Instagram className="w-5 h-5" />, label: "Instagram" },
+    { icon: <Globe className="w-5 h-5" />, label: "Website" },
+  ];
 
-    return(
-        <div className="m-6">
-            <div className="flex flex-col justify-center gap-6 py-4">
-                <div className="flex font-mulish flex-col justify-center items-center gap-4">
-                    <div className="text-secondary text-3xl md:text-5xl font-semibold">L&apos;ÉQUIPE</div>
-                    <div className="text-secondary text-xl">Découvrez les membres qui font vivre l&apos;Ambassade</div>
-                </div>
-                <div className="flex flex-row flex-wrap justify-center gap-4">
-                    {Agent.map((agent, index) => (
-                        /* From Uiverse.io by Javierrocadev */
-                        <div
-                            key={index}
-                            className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 bg-zinc-800 text-gray-50 p-5"
-                        >
-                            <div className="relative w-full h-60">
-                                <Image
-                                    src={agent.picture}
-                                    alt={agent.name}
-                                    layout="fill"
-                                    objectFit="cover"
-                                    className="group-hover:scale-110 duration-500"
-                                />
-                            </div>
-                            <div className="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12">
-                                <div className="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-secondary"></div>
-                                <span className="text-xl font-bold">{agent.name}</span>
-                                <p className="group-hover:opacity-100 w-56 duration-500 opacity-0">{agent.job}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+  return (
+    <div className=" py-16">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="text-center pb-10">
+          <h2 className="text-secondary text-3xl md:text-5xl font-semibold">L&apos;ÉQUIPE</h2>
+          <p className="text-secondary text-lg md:text-xl mt-2">Découvrez les membres qui font vivre l&apos;Ambassade</p>
         </div>
-    );
-}
+
+        <div className="flex flex-wrap justify-center gap-8">
+          {agents.map((agent, index) => (
+            <div 
+              key={index} 
+              className="relative group w-72 h-96 bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+            >
+              {/* Image */}
+              <div className="relative w-full h-60">
+                <Image
+                  src={agent.picture}
+                  alt={agent.name}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-all duration-300 group-hover:scale-105"
+                />
+              </div>
+
+              {/* Infos */}
+              <div className="p-5 text-center">
+                <h3 className="text-gray-800 font-bold text-lg">{agent.name}</h3>
+                <p className="text-gray-600 text-sm flex items-center justify-center gap-2 mt-1">
+                  <Briefcase className="w-4 h-4 text-gray-500" /> {agent.job}
+                </p>
+
+                {/* Réseaux sociaux */}
+                <div className="flex justify-center gap-4 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {socialIcons.slice(0, 3).map((social, idx) => (
+                    <button
+                      key={idx}
+                      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-all"
+                      title={social.label}
+                    >
+                      {social.icon}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TeamMember;

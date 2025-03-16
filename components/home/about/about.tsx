@@ -11,7 +11,7 @@ export default function About(){
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image
-                  src="/assets/images/backgrounds/bg-contact.png"
+                  src="/assets/images/backgrounds/bg-ambassade-1.png"
                   alt="Background"
                   fill
                   className="object-cover object-center"
