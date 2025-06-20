@@ -9,18 +9,18 @@ export default function Ambassadeur() {
       <div className="flex flex-col-reverse lg:flex-row items-stretch justify-around gap-4 lg:gap-12">
         <div className="relative w-full max-w-96 h-[400px] lg:h-[650px] mx-auto">
           <Image
-            src="/assets/images/illustrations/ambassade/ambassadeur.png"
+            src="/assets/images/illustrations/ambassade/team1.png"
             alt="histoire-3"
             fill
             className="object-cover"
           />
           <div className="absolute inset-x-0 bottom-4 flex justify-center ">
-            <div className="  flex flex-col gap-2 justify-start font-mulish border px-6 border-white text-white">
+            {/* <div className="  flex flex-col gap-2 justify-start font-mulish border px-6 border-white text-white">
               <div className="text-xl">Gonfouli SOUARIBA</div>
               <div className="text-base">
                 Ambassadeur du Tchad en Côte d&apos;Ivoire
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -46,7 +46,7 @@ export default function Ambassadeur() {
           <div className="font-mulish font-extrabold md:font-bold text-lg text-center py-8">
             Sincères et chalereuses salutations <br /> Son Excellence Monsieur Gonfouli
             SOUARIBA, <br /> Ambassadeur de la République du Tchad auprès de la
-            République de Turquie.
+            République de Côte d'Ivoire.
           </div>
         </div>
       </div>

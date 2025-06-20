@@ -64,10 +64,15 @@ export default function RDV() {
             placeholder="Numéro de téléphone"
             className="w-full px-4 py-2 border border-gray-300 rounded-full"
           />
+          <input
+            type="text"
+            placeholder="Objet du rdv"
+            className="w-full px-4 py-2 border border-gray-300 rounded-full"
+          />
           
         </div>
 
-        {/* Form fields */}
+        {/* Form fields
         <div className="flex flex-col justify-start items-start gap-6 py-6">
 
             <div className="text-primary font-semibold">
@@ -76,7 +81,7 @@ export default function RDV() {
 
             <App/>
 
-        </div>
+        </div> */}
 
         {/* Buttons */}
         <div className="flex justify-start gap-3">

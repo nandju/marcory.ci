@@ -10,11 +10,11 @@ const TeamMember = () => {
   };
 
   const agents: Agent[] = [
-    {
-      name: "M. SOUARIBA Gonfouli",
-      picture: "/assets/images/illustrations/ambassade/team1.png",
-      job: "Ambassadeur du Tchad en CI ",
-    },
+    // {
+    //   name: "M. SOUARIBA Gonfouli",
+    //   picture: "/assets/images/illustrations/ambassade/team1.png",
+    //   job: "Ambassadeur du Tchad en CI ",
+    // },
     {
       name: "M. ACHEIKH MAKAYE NIMIR",
       picture: "/assets/images/illustrations/ambassade/team4.png",

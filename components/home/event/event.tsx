@@ -12,7 +12,7 @@ export default function Event() {
     },
     {
       title: "Services consulaire",
-      image: "/assets/images/illustrations/page-accueil/card-2.png",
+      image: "/assets/images/illustrations/page-accueil/consulaire.png",
       link: "/consulaire",
       alt: "Passeports sur une carte"
     },
@@ -22,12 +22,12 @@ export default function Event() {
       link: "/tourisme/tchad-s",
       alt: "Monument au Tchad"
     },
-    {
-      title: "Events",
-      image: "/assets/images/illustrations/page-accueil/card-4.png",
-      link: "/tourisme/peuples-et-cultures",
-      alt: "Événement diplomatique"
-    }
+    // {
+    //   title: "Events",
+    //   image: "/assets/images/illustrations/page-accueil/card-4.png",
+    //   link: "/tourisme/peuples-et-cultures",
+    //   alt: "Événement diplomatique"
+    // }
   ];
 
   return (

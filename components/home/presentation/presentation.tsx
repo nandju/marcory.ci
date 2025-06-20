@@ -6,7 +6,7 @@ export default function Presentation() {
       <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-4">
         <div className="relative w-80 h-80 shrink-0">
           <Image
-            src="/assets/images/illustrations/page-accueil/leader.png"
+            src="/assets/images/illustrations/ambassade/team1.png"
             alt="histoire-3"
             layout="fill"
             objectFit="contain"

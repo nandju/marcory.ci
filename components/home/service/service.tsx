@@ -29,11 +29,11 @@ const service: Service[] = [
     title: "SERVICE ECONOMIQUE",
     link: "#",
   },
-  {
-    picture: "/assets/images/illustrations/page-accueil/card-items-5.png",
-    title: "SERVICE CULTUREL",
-    link: "/tourisme/peuples-et-cultures",
-  },
+  // {
+  //   picture: "/assets/images/illustrations/page-accueil/card-items-5.png",
+  //   title: "SERVICE CULTUREL",
+  //   link: "/tourisme/peuples-et-cultures",
+  // },
   {
     picture: "/assets/images/illustrations/page-accueil/card-items-6.png",
     title: "AUTRES DOCUMENTS",
