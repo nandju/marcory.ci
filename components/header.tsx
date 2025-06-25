@@ -139,7 +139,7 @@ export default function Header() {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/90 backdrop-blur-md">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/10 backdrop-blur-sm">
               <a
                 href="#"
                 className="text-white hover:text-[#F77F00] block px-3 py-2 text-base font-medium transition-colors"
