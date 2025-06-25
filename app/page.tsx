@@ -2,6 +2,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import MayorMessage from "@/components/mayor-message/mayor-message"
 import { Testimonials } from "@/components/testimonials/testimonials"
+import Services from "@/components/services/services"
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Header />
       <MayorMessage />
+      <Services />
       <Testimonials />
       <Footer />
     </main>

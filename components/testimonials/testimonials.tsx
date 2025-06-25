@@ -106,7 +106,7 @@ const CarteTemoignage = ({
 
 export function Testimonials() {
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-24 overflow-hidden">
       {/* Image de Fond avec Superposition */}
       <div className="absolute inset-0">
         <Image src="/assets/images/illustrations/page-accueil/parade.png" alt="parade" fill className="object-cover" />
