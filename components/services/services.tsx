@@ -72,7 +72,7 @@ export default function Services() {
               ★ GOUVERNANCE & STRATÉGIE ★
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Découvrez les Services de la Ville</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Découvrez les Services de la Mairie</h2>
           <div className="w-16 h-1 mx-auto" style={{ backgroundColor: "#F77F00" }}></div>
         </div>
 

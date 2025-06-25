@@ -127,7 +127,7 @@ export default function News() {
         <div className="text-center mt-12">
           <button
             className="px-8 py-3 rounded-full font-semibold text-white transition-all duration-300 hover:shadow-lg transform hover:scale-105"
-            style={{ backgroundColor: "#F77F00" }}
+            style={{ backgroundColor: "#009E60" }}
           >
             Voir Toutes Les Actualités
           </button>
