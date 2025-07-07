@@ -110,7 +110,8 @@ export default function Header() {
 
             {/* Right side - Desktop */}
             <div className="hidden lg:flex items-center space-x-4">
-              <Button className="bg-[#009E60] hover:bg-[#007A4A] text-white font-semibold px-6 py-2 rounded-full transition-colors flex items-center gap-2">
+              <Button
+               className="bg-[#009E60] hover:bg-[#007A4A] text-white font-semibold px-6 py-2 rounded-full transition-colors flex items-center gap-2">
                 <Bot className="h-4 w-4" />
                 CONSULTER IA
               </Button>
