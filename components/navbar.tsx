@@ -37,16 +37,16 @@ export default function Navbar() {
                 ACCUEIL
               </a>
               <a
-                href="#"
+                href="conseil-municipal"
                 className="text-white hover:text-[#F77F00] px-3 py-2 text-sm font-medium transition-colors"
               >
-                SERVICES
+                CONSEIL MUNICIPAL
               </a>
               <a
                 href="#"
                 className="text-white hover:text-[#F77F00] px-3 py-2 text-sm font-medium transition-colors"
               >
-                DÉMARCHES
+                SERVICES
               </a>
               <a
                 href="#"
@@ -58,7 +58,7 @@ export default function Navbar() {
                 href="#"
                 className="text-white hover:text-[#F77F00] px-3 py-2 text-sm font-medium transition-colors"
               >
-                CULTURE
+                CULTURES
               </a>
               <a
                 href="#"
@@ -114,14 +114,14 @@ export default function Navbar() {
               className="text-white hover:text-[#F77F00] block px-3 py-2 text-base font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              SERVICES
+              CONSEIL MUNICIPAL
             </a>
             <a
               href="#"
               className="text-white hover:text-[#F77F00] block px-3 py-2 text-base font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              DÉMARCHES
+              SERVICES
             </a>
             <a
               href="#"
@@ -135,7 +135,7 @@ export default function Navbar() {
               className="text-white hover:text-[#F77F00] block px-3 py-2 text-base font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              CULTURE
+              CULTURES
             </a>
             <a
               href="#"

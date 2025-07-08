@@ -63,7 +63,7 @@ export default function Services() {
   }
 
   return (
-    <section className="py-12" style={{ backgroundColor: "#FFFFFF" }}>
+    <section id="services" className="py-12" style={{ backgroundColor: "#FFFFFF" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* En-tête de Section */}
         <div className="text-center mb-16">

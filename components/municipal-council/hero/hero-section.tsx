@@ -9,26 +9,27 @@ import Link from "next/link"
 const heroSlides = [
   {
     id: 1,
-    title: "Une mairie, Une vision",
-    subtitle: "Une architecture ouverte et moderne pour mieux accueillir les citoyens",
-    image: "/assets/images/backgrounds/background1.png",
-    alt: "façade-mairie",
+    title: "Aby Raoul – Une vision pour Marcory",
+    subtitle: "Un leadership éclairé pour bâtir une commune moderne, inclusive et tournée vers l’avenir.",
+    image: "/assets/images/backgrounds/conseil-municipal-3.png",
+    alt: "aby-raoul-vision",
   },
   {
     id: 2,
-    title: "Marcory, Terre d'opportunités",
-    subtitle: "L'Hôtel Azalaï incarne le dynamisme économique et l'attractivité de la commune",
-    image: "/assets/images/backgrounds/background2.png",
-    alt: "hotel-azalai",
+    title: "Proximité, écoute et engagement",
+    subtitle: "À l’écoute des citoyens, le Maire travaille chaque jour pour répondre aux besoins concrets de la population.",
+    image: "/assets/images/backgrounds/conseil-municipal-2.jpg",
+    alt: "aby-raoul-ecoute",
   },
   {
     id: 3,
-    title: "Des routes vers l'avenir",
-    subtitle: "Des infrastructures solides pour une mobilité fluide et durable à Marcory",
-    image: "/assets/images/backgrounds/background3.png",
-    alt: "echangeur",
+    title: "Un bâtisseur de solutions durables",
+    subtitle: "Sous son impulsion, Marcory investit dans des infrastructures modernes, des services numériques et un cadre de vie amélioré.",
+    image: "/assets/images/backgrounds/conseil-municipal-1.png",
+    alt: "aby-raoul-actions",
   },
 ]
+
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -72,7 +73,7 @@ export default function HeroSection() {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="#" passHref>
             <Button
               variant="outline"
@@ -86,7 +87,7 @@ export default function HeroSection() {
                 NOS SERVICES
             </Button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
