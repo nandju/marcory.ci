@@ -1,5 +1,6 @@
 "use client"
 
+import { NumberTicker } from "@/components/magicui/number-ticker"
 import { useState } from "react"
 
 type MomentMemorable = {
@@ -82,17 +83,24 @@ export default function MemorableMoments() {
                 </p>
               </div>
 
-              {/* Timeline Stats */}
-              <div className="grid grid-cols-2 gap-6 pt-8">
+                {/* Timeline Stats */}
+                <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-2">125+</div>
-                  <div className="text-gray-600 text-sm">Années d'Histoire</div>
+                    <NumberTicker
+                    value={125}
+                    className="text-3xl font-bold text-gray-900 mb-2"
+                    />
+                    <div className="text-gray-600 text-sm">Années d'Histoire</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-2">6M+</div>
-                  <div className="text-gray-600 text-sm">Habitants</div>
+                    <NumberTicker
+                    value={350000}
+                    className="text-3xl font-bold text-gray-900 mb-2"
+                    />
+                    <div className="text-gray-600 text-sm">Habitants</div>
                 </div>
-              </div>
+                </div>
+
 
               {/* Additional Info */}
               <div className="pt-6 border-t border-gray-200">
