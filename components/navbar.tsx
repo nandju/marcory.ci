@@ -61,7 +61,7 @@ export default function Navbar() {
                 CULTURES
               </a>
               <a
-                href="#"
+                href="contact"
                 className="text-white hover:text-[#F77F00] px-3 py-2 text-sm font-medium transition-colors"
               >
                 CONTACT
