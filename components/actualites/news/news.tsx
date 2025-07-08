@@ -1,68 +1,53 @@
 "use client"
 
 import Image from "next/image"
-import { User, MessageCircle } from "lucide-react"
+import { User, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react"
+import { useState } from "react"
 
-const newsArticles = [ 
-  {
-    id: 3,
-    title: "Faux agents municipaux interpellés à Marcory",
-    image: "/assets/images/illustrations/page-accueil/news1.png", // image à remplacer
-    date: {
-      day: "11",
-      month: "MAR'25",
-    },
-    category: "Sécurité",
-    author: "admin",
-    comments: 9,
-    excerpt: "Trois individus se faisant passer pour des agents de la mairie ont été arrêtés grâce à une intervention rapide des forces de l’ordre.",
-  },
-  {
-    id: 1,
-    title: "Marcory certifiée ISO 9001 pour l’état civil",
-    image: "/assets/images/illustrations/page-accueil/news2-2.png",
-    date: {
-      day: "19",
-      month: "FEB'25",
-    },
-    category: "Gouvernance",
-    author: "admin",
-    comments: 6,
-    excerpt: "La mairie de Marcory reçoit la certification ISO 9001 pour la qualité de son service d’état civil, une première dans la région.",
-  },
-  {
-    id: 2,
-    title: "Travaux d’assainissement liés au métro à Marcory",
-    image: "/assets/images/illustrations/page-accueil/news3.png",
-    date: {
-      day: "31",
-      month: "JAN'25",
-    },
-    category: "Transport",
-    author: "admin",
-    comments: 14,
-    excerpt: "Des portions du boulevard sont temporairement fermées à Marcory pour faciliter les travaux du métro d’Abidjan, en cours jusqu’en septembre.",
-  },
-];
-
-
+import { newsArticles } from "./data"
 
 export default function News() {
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 6
+  const totalPages = Math.ceil(newsArticles.length / itemsPerPage)
+  
+  // Calculer les articles à afficher pour la page actuelle
+  const indexOfLastItem = currentPage * itemsPerPage
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage
+  const currentArticles = newsArticles.slice(indexOfFirstItem, indexOfLastItem)
+  
+  // Fonctions de navigation
+  const goToNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1)
+    }
+  }
+  
+  const goToPreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1)
+    }
+  }
+  
+  const goToPage = (pageNumber:number) => {
+    setCurrentPage(pageNumber)
+  }
+
   return (
     <section id="actualités" className="bg-white py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <span className="text-[#F77F00] text-sm font-semibold tracking-wide uppercase">★ ACTUALITÉS & COMMUNIQUÉS ★</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Les Dernières Nouvelles de Marcory</h2>
           <div className="w-16 h-1 bg-[#F77F00] mx-auto"></div>
-        </div>
+        </div> */}
 
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {newsArticles.map((article) => (
+          {currentArticles.map((article) => (
             <article
               key={article.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
@@ -122,6 +107,58 @@ export default function News() {
             </article>
           ))}
         </div>
+
+        {/* Pagination - S'affiche seulement si plus de 6 articles */}
+        {newsArticles.length > itemsPerPage && (
+          <div className="flex items-center justify-center mt-12 gap-2">
+            {/* Bouton Précédent */}
+            <button
+              onClick={goToPreviousPage}
+              disabled={currentPage === 1}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              Précédent
+            </button>
+
+            {/* Numéros de pages */}
+            <div className="flex items-center gap-1 mx-4">
+              {[...Array(totalPages)].map((_, index) => {
+                const pageNumber = index + 1
+                return (
+                  <button
+                    key={pageNumber}
+                    onClick={() => goToPage(pageNumber)}
+                    className={`w-10 h-10 rounded-lg font-semibold transition-colors ${
+                      currentPage === pageNumber
+                        ? 'bg-[#009E60] text-white'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                    }`}
+                  >
+                    {pageNumber}
+                  </button>
+                )
+              })}
+            </div>
+
+            {/* Bouton Suivant */}
+            <button
+              onClick={goToNextPage}
+              disabled={currentPage === totalPages}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              Suivant
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
+        )}
+
+        {/* Informations de pagination */}
+        {newsArticles.length > itemsPerPage && (
+          <div className="text-center mt-4 text-sm text-gray-600">
+            Affichage de {indexOfFirstItem + 1} à {Math.min(indexOfLastItem, newsArticles.length)} sur {newsArticles.length} articles
+          </div>
+        )}
 
         {/* View All News Button */}
         <div className="text-center mt-12">

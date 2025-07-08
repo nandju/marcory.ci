@@ -6,29 +6,34 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 // Sample data for rotating hero content
+// Sample data for rotating hero content – Page Contact
 const heroSlides = [
   {
+    id: 3,
+    title: "Faux agents municipaux interpellés à Marcory",
+    subtitle: "Trois individus se faisant passer pour des agents de la mairie ont été arrêtés grâce à une intervention rapide des forces de l’ordre.",
+    image: "/assets/images/illustrations/page-accueil/news1.png",
+    alt: "faux-agents-mairie",
+  },
+  {
     id: 1,
-    title: "Une mairie, Une vision",
-    subtitle: "Une architecture ouverte et moderne pour mieux accueillir les citoyens",
-    image: "/assets/images/backgrounds/background1.png",
-    alt: "façade-mairie",
+    title: "Marcory certifiée ISO 9001 pour l’état civil",
+    subtitle: "La mairie de Marcory reçoit la certification ISO 9001 pour la qualité de son service d’état civil, une première dans la région.",
+    image: "/assets/images/illustrations/page-accueil/news2-2.png",
+    alt: "certification-iso-9001",
   },
   {
     id: 2,
-    title: "Marcory, Terre d'opportunités",
-    subtitle: "L'Hôtel Azalaï incarne le dynamisme économique et l'attractivité de la commune",
-    image: "/assets/images/backgrounds/background2.png",
-    alt: "hotel-azalai",
-  },
-  {
-    id: 3,
-    title: "Des routes vers l'avenir",
-    subtitle: "Des infrastructures solides pour une mobilité fluide et durable à Marcory",
-    image: "/assets/images/backgrounds/background3.png",
-    alt: "echangeur",
+    title: "Travaux d’assainissement liés au métro à Marcory",
+    subtitle: "Des portions du boulevard sont temporairement fermées à Marcory pour faciliter les travaux du métro d’Abidjan, en cours jusqu’en septembre.",
+    image: "/assets/images/illustrations/page-accueil/news3.png",
+    alt: "travaux-assainissement-metro",
   },
 ]
+
+
+
+
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -72,8 +77,8 @@ export default function HeroSection() {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#actualités" passHref>
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="#" passHref>
             <Button
               variant="outline"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-3 rounded-full font-semibold transition-all duration-300"
@@ -86,7 +91,7 @@ export default function HeroSection() {
                 NOS SERVICES
             </Button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
