@@ -1,5 +1,7 @@
 import HeroSection from "@/components/services-page/hero/hero-section";
-import Services from "@/components/services-page/services/services";
+import ServicesFAQ from "@/components/services-page/services-faq/services-faq";
+import Services from "@/components/services/services";
+
 
 
 export default function ServicesPage(){
@@ -7,6 +9,7 @@ export default function ServicesPage(){
         <div>
             <HeroSection />
             <Services />
+            <ServicesFAQ />
         </div>
     );
 }

@@ -108,12 +108,12 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-6" style={{ color: "#F77F00" }}>Services rapides</h4>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><Link href="/etat-civil">État civil</Link></li>
-              <li><Link href="/urbanisme">Urbanisme</Link></li>
-              <li><Link href="/identite">Carte d'identité</Link></li>
-              <li><Link href="/passeport">Passeport</Link></li>
-              <li><Link href="/conseil-municipal">Conseil municipal</Link></li>
-              <li><Link href="/elections">Élections</Link></li>
+              <li><Link href="/services">État civil</Link></li>
+              <li><Link href="/services">Attestations</Link></li>
+              <li><Link href="/services">Légalisations</Link></li>
+              <li><Link href="/services">Declarations et procedures</Link></li>
+              <li><Link href="/services">Recensement</Link></li>
+              <li><Link href="/services">Suivi des dossiers</Link></li>
             </ul>
           </div>
 
